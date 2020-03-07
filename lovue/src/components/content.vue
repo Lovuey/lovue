@@ -7,7 +7,7 @@
                     <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
                         <div class="user-info-box">
                             <div class="avtar"></div>
-                            <p class="nickname">{{ item.author }}</p>
+                            <p v-if="item.author" class="nickname">{{ item.author.nickname }}</p>
                         </div>
                         <h3 class="item-title">{{ item.title }}</h3>
                     </div>
