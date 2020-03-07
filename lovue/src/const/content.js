@@ -30,9 +30,9 @@ export default {
                 {
                     title: 'Class 与 Style 绑定',
                     author: {
-                        nickname: '未认领',
-                        avatar: '',
-                        link: '../assets/logo.png'
+                        nickname: 'Wynne',
+                        avatar: 'https://avatars1.githubusercontent.com/u/20253837?s=460&v=4',
+                        link: 'https://www.yuque.com/wynne-xt3c9/dbpoxp/tvx62s'
                     }
                 },
                 {
