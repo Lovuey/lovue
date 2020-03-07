@@ -38,7 +38,7 @@ export default {
                 {
                     title: "if 条件渲染",
                     author: {
-                        nickname: "未认领",
+                        nickname: "ShannonMYang",
                         avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "../assets/logo.png"
                     }
