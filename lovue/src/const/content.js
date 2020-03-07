@@ -7,7 +7,7 @@ export default {
                     title: 'Vue 实例',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -15,7 +15,7 @@ export default {
                     title: '模板语法',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -23,7 +23,7 @@ export default {
                     title: '计算属性和监听器',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -39,7 +39,7 @@ export default {
                     title: 'if 条件渲染',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -47,7 +47,7 @@ export default {
                     title: 'for 列表渲染',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -55,7 +55,7 @@ export default {
                     title: '事件处理',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -63,7 +63,7 @@ export default {
                     title: '表单输入绑定',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }
@@ -76,7 +76,7 @@ export default {
                     title: '组件基础',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -84,7 +84,7 @@ export default {
                     title: '组件注册',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -95,7 +95,7 @@ export default {
                     title: '自定义事件',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -103,7 +103,7 @@ export default {
                     title: '插槽',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -111,7 +111,7 @@ export default {
                     title: '动态组件',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -119,7 +119,7 @@ export default {
                     title: '异步组件',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -127,7 +127,7 @@ export default {
                     title: '处理边界情况',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }
@@ -140,7 +140,7 @@ export default {
                     title: '进入/离开 & 列表过渡',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -148,7 +148,7 @@ export default {
                     title: '状态固定',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }
@@ -161,7 +161,7 @@ export default {
                     title: '混入',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -169,7 +169,7 @@ export default {
                     title: '自定义指令',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -177,7 +177,7 @@ export default {
                     title: '渲染函数 & JSX',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -185,7 +185,7 @@ export default {
                     title: '插件',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -193,7 +193,7 @@ export default {
                     title: '过滤器',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }
@@ -206,7 +206,7 @@ export default {
                     title: '单文件组件',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -214,7 +214,7 @@ export default {
                     title: '单元测试',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -222,7 +222,7 @@ export default {
                     title: 'TypeScript支持',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -230,7 +230,7 @@ export default {
                     title: '生产环境部署',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }
@@ -243,7 +243,7 @@ export default {
                     title: '路由',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -251,7 +251,7 @@ export default {
                     title: '状态管理',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -259,7 +259,7 @@ export default {
                     title: '服务端渲染',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 },
@@ -267,7 +267,7 @@ export default {
                     title: '安全',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }
@@ -280,7 +280,7 @@ export default {
                     title: '深入响应原理',
                     author: {
                         nickname: '未认领',
-                        avatar: '',
+                        avatar: 'https://cn.vuejs.org/images/logo.png',
                         link: '../assets/logo.png'
                     }
                 }

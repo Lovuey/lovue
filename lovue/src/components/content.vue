@@ -5,9 +5,9 @@
                 <h2>{{ alist.title }}</h2>
                 <div class="list-box">
                     <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
-                        <div class="user-info-box">
-                            <div class="avtar"></div>
-                            <p v-if="item.author" class="nickname">{{ item.author.nickname }}</p>
+                        <div v-if="item.author" class="user-info-box">
+                            <img :src="item.author.avatar" class="avtar">
+                            <p class="nickname">{{ item.author.nickname }}</p>
                         </div>
                         <h3 class="item-title">{{ item.title }}</h3>
                     </div>
@@ -24,6 +24,11 @@
         props: {
             msg: String,
             lists: Array
+        },
+        data() {
+            return {
+                
+            }
         }
     }
 </script>
@@ -70,11 +75,13 @@
         top: 0;
     }
     .avtar {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 45px;
         height: 45px;
         background-color: white;
         border-radius: 22.5px;
-        background-image: url('../assets/logo.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -87,5 +94,6 @@
         color: #000;
         font-size: 25px;
         padding: 10px;
+        margin-top: 80px;
     }
 </style>
