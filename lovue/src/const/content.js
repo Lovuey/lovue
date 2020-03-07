@@ -14,8 +14,8 @@ export default {
                 {
                     title: "模板语法",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        nickname: "ygben",
+                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
                         link: "../assets/logo.png"
                     }
                 },
@@ -102,8 +102,8 @@ export default {
                 {
                     title: "插槽",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        nickname: "ygben",
+                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
                         link: "../assets/logo.png"
                     }
                 },
