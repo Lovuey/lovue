@@ -1,6 +1,6 @@
 <template>
     <div class="top-box">
-        <img class="logo-icon" src="../assets/logo.png" alt="">
+        <img class="logo-icon" src="../assets/logo.png" alt=""><span class="logo-title">Lovue</span>
         <h1 class="nav-title">{{ msg }}</h1>
     </div>
 </template>
@@ -33,5 +33,9 @@
     }
     .nav-title {
         flex-grow: 1;
+    }
+    .logo-title {
+        padding-left: 8px;
+        font-size: 18px;
     }
 </style>
