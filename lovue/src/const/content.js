@@ -6,9 +6,9 @@ export default {
                 {
                     title: "Vue 实例",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 },
                 {
