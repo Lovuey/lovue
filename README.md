@@ -1,4 +1,10 @@
 # Love vue
+
+
+![](https://github.com/Lovuey/lovue/blob/master/banner-lovue.png)
+
+
+
 这里是 「Vue虚拟实验室」团队项目。
 
 
@@ -8,3 +14,7 @@
 
 
 这个项目可以帮助你入门 Vue，里面会有大量的 demo。
+
+
+
+[前端小课，前端从 0 到 1](https://github.com/lefex/FE/blob/master/README.md)
