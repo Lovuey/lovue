@@ -99,7 +99,13 @@ export default {
                     }
                 },
                 {
-                    title: "Prop"
+                    title: "Prop",
+                    des: "请负责人人添加描述，最多 30 个字。",
+                    author: {
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
+                    }
                 },
                 {
                     title: "自定义事件",
