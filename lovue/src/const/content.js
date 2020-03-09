@@ -59,20 +59,20 @@ export default {
                 },
                 {
                     title: "事件处理",
-                    des: "监听DOM事件并执行相关JS代码",
-                    author: {
-                        nickname: "Yuxiaoy1",
-                        avatar: "https://avatars0.githubusercontent.com/u/24974936?s=60&v=4",
-                        link: "https://github.com/Yuxiaoy1"
-                    }
-                },
-                {
-                    title: "表单输入绑定",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
                         nickname: "未认领",
                         avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "../assets/logo.png"
+                    }
+                },
+                {
+                    title: "表单输入绑定",
+                    des: "请负责人人添加描述，最多 30 个字",
+                    author: {
+                        nickname: "chuhuangvio",
+                        avatar: "https://img04.sogoucdn.com/app/a/100520146/7fb1e9baa386272c2a62daa26f8a8332",
+                        link: "https://github.com/chuhuangvio"
                     }
                 }
             ]
