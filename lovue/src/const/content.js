@@ -68,7 +68,7 @@ export default {
                 },
                 {
                     title: "表单输入绑定",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "请负责人人添加描述，最多 30 个字",
                     author: {
                         nickname: "chuhuangvio",
                         avatar: "https://img04.sogoucdn.com/app/a/100520146/7fb1e9baa386272c2a62daa26f8a8332",
