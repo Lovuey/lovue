@@ -59,11 +59,11 @@ export default {
                 },
                 {
                     title: "事件处理",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "监听DOM事件并执行相关JS代码",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "Yuxiaoy1",
+                        avatar: "https://avatars0.githubusercontent.com/u/24974936?s=60&v=4",
+                        link: "https://github.com/Yuxiaoy1"
                     }
                 },
                 {
