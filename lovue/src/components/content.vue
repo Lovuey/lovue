@@ -3,7 +3,7 @@
         <div class="content-box">
             <div v-for="(alist, index) in lists" :key="index">
                 <h2>{{ alist.title }}</h2>
-                <div class="list-box">
+                <div class="list-box" v-on:click="cardClicked()">
                     <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
                         <div class="card-box">
                             <div v-if="item.author" class="user-info-box">
@@ -22,8 +22,6 @@
 </template>
 
 <script>
-    // eslint-disable-next-line no-unused-vars
-    import ClassWithStyle from './base/BindClassWithStyle'
     export default {
         name: 'Top',
         props: {
@@ -34,9 +32,11 @@
             return {
                 
             }
-        },components:{
-            // eslint-disable-next-line vue/no-unused-components
-            ClassWithStyle
+        },
+        methods: {
+            cardClicked() {
+                console.log('clicked');
+            }
         }
     }
 </script>
