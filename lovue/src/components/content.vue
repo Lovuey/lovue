@@ -22,6 +22,8 @@
 </template>
 
 <script>
+    // eslint-disable-next-line no-unused-vars
+    import ClassWithStyle from './base/BindClassWithStyle'
     export default {
         name: 'Top',
         props: {
@@ -32,6 +34,9 @@
             return {
                 
             }
+        },components:{
+            // eslint-disable-next-line vue/no-unused-components
+            ClassWithStyle
         }
     }
 </script>
