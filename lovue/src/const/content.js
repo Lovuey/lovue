@@ -23,10 +23,10 @@ export default {
                 },
                 {
                     title: "计算属性和监听器",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "关于computed, methods, watchers的深入理解",
                     author: {
                         nickname: "张家博",
-                        avatar: "https://avatars0.githubusercontent.com/u/2065312?s=460&v=4",
+                        avatar: "http://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
                         link: "https://github.com/jarbozhang"
                     }
                 },
