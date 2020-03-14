@@ -18,7 +18,7 @@
     .top-box {
         margin: 0;
         padding: 0;
-        background-color: #fafafa;
+        background-color: #fff;
         border-bottom: #f5f5f5 1px solid;
         display: flex;
         position: fixed;

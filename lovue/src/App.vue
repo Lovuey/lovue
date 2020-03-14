@@ -17,7 +17,7 @@
         },
         data: function () {
             return {
-                title: 'Vue 虚拟实验室 · 实例'
+                title: 'Vue 虚拟实验室'
             }
         }
     }
@@ -27,15 +27,15 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: #f6f8f9;
     }
     .app-content {
         box-sizing: border-box;
         max-width: 1256px;
         margin: 0 auto;
-        background-color: #fff;
         min-height: 700px;
         margin-top: 40px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         margin-top: 100px;
     }
     #app {

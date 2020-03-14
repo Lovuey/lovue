@@ -53,7 +53,7 @@
         display: flex;
         background-color: #fff;
         flex-direction: column;
-        margin-bottom: 100px;
+        padding: 20px 15px;
     }
     .list-box {
         width: 100%;
@@ -114,7 +114,7 @@
         color: #314659;
         text-align: left;
         margin-left: 12px;
-        font-weight: lighter;
+        font-weight: bold;
     }
     .item-title {
         color: #0d1a26;
