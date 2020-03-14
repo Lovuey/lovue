@@ -21,6 +21,12 @@
         background-color: #fafafa;
         border-bottom: #f5f5f5 1px solid;
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
         flex-direction: row;
         align-items: center;
     }

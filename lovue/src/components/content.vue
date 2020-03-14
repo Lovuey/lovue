@@ -3,9 +3,9 @@
         <div class="content-box">
             <div v-for="(alist, index) in lists" :key="index">
                 <h2>{{ alist.title }}</h2>
-                <div class="list-box" v-on:click="cardClicked()">
+                <div class="list-box">
                     <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
-                        <div class="card-box">
+                        <div class="card-box" v-on:click="cardClicked(item)">
                             <div v-if="item.author" class="user-info-box">
                                 <img :src="item.author.avatar" class="avtar">
                                 <p class="nickname">{{ item.author.nickname }}</p>
@@ -34,8 +34,15 @@
             }
         },
         methods: {
-            cardClicked() {
-                console.log('clicked');
+            cardClicked(item) {
+                console.log('clicked', item);
+                if (!item || !item.route) {
+                    console.log('请在 const/content.js 中添加 route 参数');
+                    return;
+                }
+                this.$router.push({
+                    path: item.route
+                });
             }
         }
     }
@@ -44,9 +51,6 @@
 <style scoped>
     .content-box {
         display: flex;
-        box-sizing: border-box;
-        max-width: 1256px;
-        margin: 0 auto;
         background-color: #fff;
         flex-direction: column;
         margin-bottom: 100px;
