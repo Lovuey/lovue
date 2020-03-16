@@ -1,290 +1,328 @@
 export default {
     lists: [
         {
-            title: '基础',
+            title: "基础",
             datas: [
                 {
-                    title: 'Vue 实例',
+                    title: "Vue 实例",
+                    des: "通过用 Vue 函数创建一个新的 Vue 实例。",
+                    route: "/vueinstance",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 },
                 {
-                    title: '模板语法',
+                    title: "模板语法",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "ygben",
+                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '计算属性和监听器',
+                    title: "计算属性和监听器",
+                    des: "关于computed, methods, watchers的深入理解",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "张家博",
+                        avatar: "http://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
+                        link: "https://github.com/jarbozhang"
                     }
                 },
                 {
-                    title: 'Class 与 Style 绑定',
+                    title: "Class 与 Style 绑定",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: 'Wynne',
-                        avatar: 'https://avatars1.githubusercontent.com/u/20253837?s=460&v=4',
-                        link: 'https://www.yuque.com/wynne-xt3c9/dbpoxp/tvx62s'
+                        nickname: "Wynne",
+                        avatar: "https://avatars1.githubusercontent.com/u/20253837?s=460&v=4",
+                        link: "https://www.yuque.com/wynne-xt3c9/dbpoxp/tvx62s"
                     }
                 },
                 {
-                    title: 'if 条件渲染',
+                    title: "if 条件渲染",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "ShannonMYang",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: 'for 列表渲染',
+                    title: "for 列表渲染",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "沈鑫",
+                        avatar: "https://avatars2.githubusercontent.com/u/28528399?s=60&v=4",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '事件处理',
+                    title: "事件处理",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "唐超",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '表单输入绑定',
+                    title: "表单输入绑定",
+                    des: "请负责人人添加描述，最多 30 个字",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "chuhuangvio",
+                        avatar: "https://img04.sogoucdn.com/app/a/100520146/7fb1e9baa386272c2a62daa26f8a8332",
+                        link: "https://github.com/chuhuangvio"
                     }
                 }
             ]
         },
         {
-            title: '组件',
+            title: "组件",
             datas: [
                 {
-                    title: '组件基础',
+                    title: "组件基础",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '组件注册',
+                    title: "组件注册",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: 'Prop'
-                },
-                {
-                    title: '自定义事件',
+                    title: "Prop",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '插槽',
+                    title: "自定义事件",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '动态组件',
+                    title: "插槽",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "ygben",
+                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '异步组件',
+                    title: "动态组件",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '处理边界情况',
+                    title: "异步组件",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
+                    }
+                },
+                {
+                    title: "处理边界情况",
+                    des: "请负责人人添加描述，最多 30 个字。",
+                    author: {
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 }
             ]
         },
         {
-            title: '过渡 & 动画',
+            title: "过渡 & 动画",
             datas: [
                 {
-                    title: '进入/离开 & 列表过渡',
+                    title: "进入/离开 & 列表过渡",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '状态固定',
+                    title: "状态固定",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 }
             ]
         },
         {
-            title: '可复用性 & 组合',
+            title: "可复用性 & 组合",
             datas: [
                 {
-                    title: '混入',
+                    title: "混入",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '自定义指令',
+                    title: "自定义指令",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '渲染函数 & JSX',
+                    title: "渲染函数 & JSX",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '插件',
+                    title: "插件",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '过滤器',
+                    title: "过滤器",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 }
             ]
         },
         {
-            title: '工具',
+            title: "工具",
             datas: [
                 {
-                    title: '单文件组件',
+                    title: "单文件组件",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '单元测试',
+                    title: "单元测试",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: 'TypeScript支持',
+                    title: "TypeScript支持",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '生产环境部署',
+                    title: "生产环境部署",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 }
             ]
         },
         {
-            title: '规模化',
+            title: "规模化",
             datas: [
                 {
-                    title: '路由',
+                    title: "路由",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '状态管理',
+                    title: "状态管理",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '服务端渲染',
+                    title: "服务端渲染",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
-                    title: '安全',
+                    title: "安全",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 }
             ]
         },
         {
-            title: '原理',
+            title: "原理",
             datas: [
                 {
-                    title: '深入响应原理',
+                    title: "深入响应原理",
+                    des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: '未认领',
-                        avatar: 'https://cn.vuejs.org/images/logo.png',
-                        link: '../assets/logo.png'
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 }
             ]
-        },
+        }
     ]
-}
+};

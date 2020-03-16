@@ -5,11 +5,14 @@
                 <h2>{{ alist.title }}</h2>
                 <div class="list-box">
                     <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
-                        <div v-if="item.author" class="user-info-box">
-                            <img :src="item.author.avatar" class="avtar">
-                            <p class="nickname">{{ item.author.nickname }}</p>
+                        <div class="card-box" v-on:click="cardClicked(item)">
+                            <div v-if="item.author" class="user-info-box">
+                                <img :src="item.author.avatar" class="avtar">
+                                <p class="nickname">{{ item.author.nickname }}</p>
+                            </div>
+                            <h3 class="item-title">{{ item.title }}</h3>
+                            <p class="item-des">{{ item.des }}</p>
                         </div>
-                        <h3 class="item-title">{{ item.title }}</h3>
                     </div>
                 </div>
             </div>
@@ -29,44 +32,65 @@
             return {
                 
             }
+        },
+        methods: {
+            cardClicked(item) {
+                console.log('clicked', item);
+                if (!item || !item.route) {
+                    console.log('请在 const/content.js 中添加 route 参数');
+                    return;
+                }
+                this.$router.push({
+                    path: item.route
+                });
+            }
         }
     }
 </script>
 
 <style scoped>
     .content-box {
-        box-sizing: border-box;
         display: flex;
-        padding: 40px;
-        width: 100%;
-        background-color: #fafafa;
+        background-color: #fff;
         flex-direction: column;
-        align-items: flex-start;
+        padding: 20px 15px;
     }
     .list-box {
+        width: 100%;
         display: flex;
-        margin: 10px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
     }
     .item-box {
         position: relative;
+        box-sizing: border-box;
         cursor: pointer;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        width: 300px;
-        height: 200px;
+        margin: 0;
+        padding: 0;
+        padding: 16px 12px;
+        color: rgba(0, 0, 0, 0.65);
+        width: 20%;
+        height: 250px;
         flex-grow: 0;
         flex-shrink: 0;
-        justify-content: center;
-        align-items: center;
         background-color: #fff;
-        border-radius: 5px;
+    }
+    .card-box:hover {
+        box-shadow: 2px 2px 20px #ccc;
+    }
+    .card-box {
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 2px;
+        border: 1px solid #f0f0f0;
+        height: 100%;
+        transition: all 0.3s;
     }
     .user-info-box {
         position: relative;
-        margin: 16px;
+        margin: 12px;
     }
     .nickname {
         position: absolute;
@@ -87,13 +111,21 @@
         background-size: cover;
     }
     h2 {
+        color: #314659;
         text-align: left;
-        margin-left: 10px;
+        margin-left: 12px;
+        font-weight: bold;
     }
     .item-title {
-        color: #000;
-        font-size: 25px;
+        color: #0d1a26;
+        font-size: 16px;
         padding: 10px;
         margin-top: 80px;
+    }
+    .item-des {
+        color: #697b8c;
+        font-size: 14px;
+        text-align: left;
+        padding: 0px 12px;
     }
 </style>
