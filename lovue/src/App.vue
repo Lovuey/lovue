@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Top v-bind:msg="title" />
+        <Top v-bind:msg="title"/>
         <div class="app-content">
             <router-view />
         </div>
