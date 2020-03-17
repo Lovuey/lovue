@@ -2,12 +2,14 @@
     <div id="app">
         <Top v-bind:msg="title"/>
         <div class="app-content">
+            <!-- 这个地方用来渲染路由相关的组件 -->
             <router-view />
         </div>
     </div>
 </template>
 
 <script>
+    // Top 为顶部的导航栏
     import Top from './components/top.vue';
 
     export default {
