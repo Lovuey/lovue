@@ -19,7 +19,6 @@
       <p>代码块组件JS代码示例</p>
       <CodeHighLight
         :code='code.block1'
-        lang='javascript'
       ></CodeHighLight>
       <p>代码块组件html代码示例</p>
       <CodeHighLight
