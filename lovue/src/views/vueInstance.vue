@@ -9,6 +9,7 @@
             <div v-for="(node, index) in article.nodes" :key="index">
                 <p v-if="node.type === 'text'">{{ node.con }}</p>
                 <codehighLight v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang">{{ node.con }}</codehighLight>
+                <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
             </div>
         </div>
         <div class="post-footer">

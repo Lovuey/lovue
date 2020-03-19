@@ -7,26 +7,46 @@ export default {
     },
     nodes: [
         {
+            type: 'h1',
+            con: '例1：创建一个 Vue 实例'
+        },
+        {
             type: 'text',
-            con: '在学习 Vue 之前，也许你已经看到过 <code>new Vue({})</code> 这样的代码，我们今天一起学习 Vue 实例。'
+            con: `Vue 其本质是一个函数，一个构造函数，可以被看作是一个“类”，通过 new 创建它的实例。本例子创建第一个 Vue 实例。
+            `
         },
         {
             type: 'code',
-            lang: 'javascript',
+            lang: 'html',
             con:
-`<script>
-    const vmFooter = new Vue({
-        // 提供一个 vue 实例的挂载节点，可以是一个选择器，或者是一个 HTMLElement
-        el: '#app-footer',
-        data: function () {
-            return {
-                footer: "感谢阅读",
+`<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实例ue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div>{{ title }}</div>
+    <div id="app">Hello {{ msg }}</div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    msg: '前端小课',
+                    title: '早上好，打卡！'
+                }
             }
         }
-    });
-    // 访问 vue 实例的挂载节点
-    console.log(vmFooter.$el);
-</script>`
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>`
         },
     ]
 };
