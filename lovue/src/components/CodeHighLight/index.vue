@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <pre><code :class="'language-'+lang" v-text="code">
+  <div v-show="code">
+    <pre><code :class="codeClass" v-text="code">
       </code></pre>
   </div>
 </template>
@@ -8,9 +8,17 @@
 import Prism from "prismjs";
 export default {
   name: "CodeHighLight",
-  props: ["code", "lang"],
+  props: {
+    code: { type: String, required: true },
+    lang: { type: String, default: "javascript" }
+  },
   data() {
     return {};
+  },
+  computed:{
+    codeClass:function(){
+      return 'language-'+this.lang
+    }
   },
   mounted() {
     Prism.highlightAll();
