@@ -1,19 +1,23 @@
 <template>
     <div id="app">
-        <Top v-bind:msg="title" />
+        <Top v-bind:msg="title"/>
         <div class="app-content">
+            <!-- 这个地方用来渲染路由相关的组件 -->
             <router-view />
         </div>
+        <Buttom />
     </div>
 </template>
 
 <script>
+    // Top 为顶部的导航栏
     import Top from './components/top.vue';
+    import Buttom from './components/bottom.vue';
 
     export default {
         name: 'App',
         components: {
-            Top
+            Top, Buttom
         },
         data: function () {
             return {
@@ -35,7 +39,7 @@
         margin: 0 auto;
         min-height: 700px;
         margin-top: 40px;
-        margin-bottom: 80px;
+        /* margin-bottom: 80px; */
         margin-top: 100px;
     }
     #app {

@@ -85,27 +85,27 @@ export default {
                     title: "组件基础",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 },
                 {
                     title: "组件注册",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 },
                 {
                     title: "Prop",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "子组件接受父组件传递数据的一个自定义属性",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "张晓檬",
+                        avatar: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584014362336&di=0cfe72d3caadf019fd13c0a9b327e9d5&imgtype=0&src=http%3A%2F%2Fwww.deskcar.com%2Fdesktop%2Fcartoon%2Fjapan%2F2011417214141%2F22.jpg",
+                        link: "https://github.com/zhangxiaomeng1"
                     }
                 },
                 {
@@ -130,18 +130,18 @@ export default {
                     title: "动态组件",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 },
                 {
                     title: "异步组件",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 },
                 {

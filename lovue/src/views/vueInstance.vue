@@ -1,18 +1,16 @@
 <template>
     <div id="vueInstance">
         <div class="post-header">
-            <p class="post-title">{{ post.title }}</p>
-            <p class="post-des">{{ post.des }}</p>
-            <p class="author">作者：<a :href="post.link" target="_blank">{{ post.author }}</a></p>
+            <p class="post-title">{{ article.title }}</p>
+            <p class="post-des">{{ article.subTitle }}</p>
+            <p class="author">作者：<a :href="article.author.link" target="_blank">{{ article.author.name }}</a></p>
         </div>
         <div class="post-body">
-            <p>在学习 Vue 之前，也许你已经看到过 <code>new Vue({})</code> 这样的代码，我们今天一起学习 Vue 实例。</p>
-            <p>在开始之前我们先看一段代码：</p>
-            <code>
-                const vm = new Vue({
-
-                });
-            </code>
+            <div v-for="(node, index) in article.nodes" :key="index">
+                <p v-if="node.type === 'text'">{{ node.con }}</p>
+                <codehighLight v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang">{{ node.con }}</codehighLight>
+                <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
+            </div>
         </div>
         <div class="post-footer">
             <p class="post-link">参考：</p>
@@ -21,26 +19,22 @@
 </template>
 
 <script>
-    export default {
-        name: 'VueInstance',
-        components: {
-
-        },
-        data: function () {
-            return {
-                post: {
-                    title: 'Vue 实例详解',
-                    author: '素燕',
-                    des: '本 Demo 通过用 Vue 函数创建一个新的 Vue 实例。',
-                    link: 'https://github.com/lefex/FE'
-
-                }
-            }
-        },
-        mounted() {
-            console.log(this.$route);
+import codehighLight from "@/components/CodeHighLight";
+import article from "../assets/article/vueInstance.js";
+export default {
+    name: "VueInstance",
+    components: {
+        codehighLight
+    },
+    data: function () {
+        return {
+            article
         }
+    },
+    mounted() {
+        console.log(this.$route);
     }
+};
 </script>
 
 <style>
@@ -50,8 +44,8 @@
     }
 
     .post-header {
-        border-left: 4px solid #D0021B;
-        border-right: 4px solid #D0021B;
+        border-left: 4px solid #d0021b;
+        border-right: 4px solid #d0021b;
         background-color: white;
         padding: 5px 20px;
         border-radius: 4px;
@@ -83,11 +77,11 @@
         font-size: 20px;
     }
 
-    code {
-        font-size: 15px;
-        border-left: 1px solid #7089FF;
-        border-radius: 3px;
-        background-color:#eef;
-        padding: 2px 5px;
-    }
+    /* code {
+  font-size: 15px;
+  border-left: 1px solid #7089ff;
+  border-radius: 3px;
+  background-color: #eef;
+  padding: 2px 5px;
+} */
 </style>
