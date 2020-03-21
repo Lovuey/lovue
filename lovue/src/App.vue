@@ -1,23 +1,24 @@
 <template>
     <div id="app">
-        <Top v-bind:msg="title"/>
+        <top v-bind:msg="title"/>
         <div class="app-content">
             <!-- 这个地方用来渲染路由相关的组件 -->
             <router-view />
         </div>
-        <Buttom />
+        <buttom></buttom>
     </div>
 </template>
 
 <script>
     // Top 为顶部的导航栏
-    import Top from './components/top.vue';
-    import Buttom from './components/bottom.vue';
+    import Top from '@/components/Top.vue';
+    import Buttom from '@/components/Bottom.vue';
 
     export default {
         name: 'App',
         components: {
-            Top, Buttom
+            'top': Top,
+            'buttom': Buttom
         },
         data: function () {
             return {
