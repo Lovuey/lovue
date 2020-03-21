@@ -1,11 +1,14 @@
 <template>
   <div>
-    <pre><code :class="'language-'+lang" v-text="code">
-      </code></pre>
+    <pre>
+      <code :class="'language-'+lang" v-text="code"></code>
+    </pre>
   </div>
 </template>
+
 <script>
 import Prism from "prismjs";
+
 export default {
   name: "CodeHighLight",
   props: ["code", "lang"],
@@ -20,6 +23,7 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 pre {
   padding: 0.5rem;
