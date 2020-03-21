@@ -11,12 +11,20 @@ import Prism from "prismjs";
 
 export default {
   name: "CodeHighLight",
-  props: ["code", "lang"],
+  props: {
+    code: { type: String, required: true },
+    lang: { type: String, default: "javascript" }
+  },
   data() {
     return {};
   },
   mounted() {
     Prism.highlightAll();
+  },
+  computed:{
+    codeClass:function(){
+      return 'language-'+this.lang
+    }
   },
   updated() {
     Prism.highlightAll();
