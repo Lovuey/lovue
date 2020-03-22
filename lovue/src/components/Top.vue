@@ -1,6 +1,11 @@
 <template>
     <div class="top-box">
-        <img class="logo-icon" src="../assets/logo.png" alt=""><span class="logo-title">Lovue</span>
+        <a class="nav" href='/'>
+            <div class="nav">
+                <img class="logo-icon" src="../assets/logo.png" alt="">
+                <span class="logo-title">Lovue</span>
+            </div>
+        </a>
         <h1 class="nav-title">{{ msg }}</h1>
         <div class="nav">
             <a class="nav-link" href='/about' >
@@ -36,18 +41,19 @@
         width: 100%;
         z-index: 999;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
     .logo-icon {
         width: 50px;
         height: 50px;
-        flex-grow: 0;
-        flex-shrink: 0;
+        /* flex-grow: 0; */
+        /* flex-shrink: 0; */
         margin-left: 40px;
     }
-    .nav-title {
+    /* .nav-title {
         flex-grow: 1;
-    }
+    } */
     .logo-title {
         padding-left: 8px;
         font-size: 18px;
@@ -55,8 +61,11 @@
     .nav {
         font-size: 16px;
         margin: 3px 40px 0 0;
-        flex-grow: 0;
+        /* flex-grow: 0; */
         display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #2c3e50;
     }
     .nav-icon {
         width: 20px;
