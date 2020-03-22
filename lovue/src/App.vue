@@ -28,25 +28,6 @@
     }
 </script>
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f6f8f9;
-    }
-    .app-content {
-        box-sizing: border-box;
-        max-width: 1256px;
-        margin: 0 auto;
-        min-height: 700px;
-        margin-top: 40px;
-        margin-top: 75px;
-    }
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-    }
+<style lang="less">
+@import "./styles/lovue.less";
 </style>
