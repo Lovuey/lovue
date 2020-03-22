@@ -1,0 +1,61 @@
+@import "./base.less";
+
+/* 文章头部样式 */
+.post-header {
+    border-left: 4px solid #d0021b;
+    border-right: 4px solid #d0021b;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 4px;
+    .title {
+        font-weight: 700;
+        font-size: 30px;
+        color: #555;
+        text-align: left;
+    }
+    .des {
+        font-size: @text-font-size;
+        color: @text-222-color;
+        text-align: left;
+    }
+    .author {
+        font-size: @text-font-size;
+        color: @text-222-color;
+        text-align: left;
+    }
+}
+/* 文章内容样式 */
+.post-body {
+    padding: 20px;
+    border-top: 10px solid #f6f8f9;
+    min-height: 500px;
+    .code-exam-show {
+        padding: 10px 10px;
+        padding-bottom: 20px;
+        border: #E02020 1px;
+        border-style: dotted;
+    }
+    .code-show-title {
+        color: blue;
+    }
+    .text {
+        font-size: @text-font-size;
+    }
+    h2 {
+        border-left: 4px solid #d0021b;
+        background-color: white;
+        padding: 5px 20px;
+    }
+}
+/* 文章底部样式 */
+.post-footer {
+    border-top: 10px solid #f6f8f9;
+    border-left: 4px solid #eee;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 4px;
+    min-height: 100px;
+    .link {
+        font-size: 20px;
+    }
+}

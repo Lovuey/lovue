@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import Content from '../components/content.vue';
+    import Content from '../components/Content.vue';
     import listContent from '../const/content.js';
 
     export default {
