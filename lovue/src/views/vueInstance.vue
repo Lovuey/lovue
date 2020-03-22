@@ -8,12 +8,20 @@
         <div class="post-body">
             <div v-for="(node, index) in article.nodes" :key="index">
                 <p v-if="node.type === 'text'">{{ node.con }}</p>
-                <code-high-light v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang" dataLine = 1-4,6,15-24 >{{ node.con }}</code-high-light>
+                <code-high-light v-else-if="node.type === 'code'"
+                    :code='node.con'
+                    :lang="node.lang"
+                    dataLine = 1-4,6,15-24 >{{ node.con }}
+                </code-high-light>
                 <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
             </div>
             <div v-for="(node, index) in article.nodes" :key="index">
                 <p v-if="node.type === 'text'">{{ node.con }}</p>
-                <code-high-light v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang" dataLine = 1-4,6,15-24 >{{ node.con }}</code-high-light>
+                <code-high-light v-else-if="node.type === 'code'"
+                    :code='node.con'
+                    :lang="node.lang"
+                    dataLine = 1-4,6,15-24 >{{ node.con }}
+                </code-high-light>
                 <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
             </div>
         </div>
@@ -81,12 +89,4 @@ export default {
     .post-link {
         font-size: 20px;
     }
-
-    /* code {
-  font-size: 15px;
-  border-left: 1px solid #7089ff;
-  border-radius: 3px;
-  background-color: #eef;
-  padding: 2px 5px;
-} */
 </style>
