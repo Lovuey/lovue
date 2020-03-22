@@ -6,7 +6,11 @@
         <div class="post-body">
             <div v-for="(node, index) in article.nodes" :key="index">
                 <p v-if="node.type === 'text'" class="text">{{ node.con }}</p>
-                <codehigh-light v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang">{{ node.con }}</codehigh-light>
+                <codehigh-light v-else-if="node.type === 'code'"
+                    :code='node.con'
+                    :lang='node.lang'
+                    :dataLine = "node.stressLine">{{ node.con }}
+                </codehigh-light>
                 <div v-else-if="node.type === 'example'">
                     <h3 class="code-show-title">代码显示结果：</h3>
                     <div class="code-exam-show">
