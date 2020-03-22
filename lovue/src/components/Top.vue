@@ -12,7 +12,7 @@
                 <img class="nav-icon" src="../assets/icon/about.png" /><span>关于</span>
             </a>
             <a class="nav-link" href='https://github.com/Lovuey/lovue' target="_blank">
-                <img class="nav-icon" src="../assets/icon/github.png" /><span>GITHUB</span>
+                <img class="nav-icon" src="../assets/icon/github.png" /><span>GitHub</span>
             </a>
         </div>
     </div>
