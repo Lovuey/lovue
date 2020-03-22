@@ -5,9 +5,8 @@ module.exports = {
     'plugins': [
         ["prismjs",
             {
-                "languages": ['html', "javascript", "css", "markup"], //语言类型
-                "plugins": ['inline-color', 'copy-to-clipboard', 'show-language'], //prism插件
-                "theme": "tomorrow", //主题！！
+                "languages": ['html', "javascript", "css", "markup"],
+                "plugins": ['match-braces', 'autolinker', 'inline-color', 'normalize-whitespace', 'copy-to-clipboard', 'line-highlight', 'show-language', 'line-numbers'],
                 "css": true
             }
         ]

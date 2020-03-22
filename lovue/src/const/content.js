@@ -1,9 +1,7 @@
 export default {
-    lists: [
-        {
+    lists: [{
             title: "基础",
-            datas: [
-                {
+            datas: [{
                     title: "Vue 实例",
                     des: "通过用 Vue 函数创建一个新的 Vue 实例。",
                     route: "/vueinstance",
@@ -80,8 +78,7 @@ export default {
         },
         {
             title: "组件",
-            datas: [
-                {
+            datas: [{
                     title: "组件基础",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -157,8 +154,7 @@ export default {
         },
         {
             title: "过渡 & 动画",
-            datas: [
-                {
+            datas: [{
                     title: "进入/离开 & 列表过渡",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -180,8 +176,7 @@ export default {
         },
         {
             title: "可复用性 & 组合",
-            datas: [
-                {
+            datas: [{
                     title: "混入",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -230,14 +225,13 @@ export default {
         },
         {
             title: "工具",
-            datas: [
-                {
+            datas: [{
                     title: "单文件组件",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "以代码高亮组件为例讲解Vue单文件组件的使用",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "Yuxiaoy1",
+                        avatar: "https://avatars0.githubusercontent.com/u/24974936?s=60&v=4",
+                        link: "https://github.com/yuxiaoy1"
                     }
                 },
                 {
@@ -271,8 +265,7 @@ export default {
         },
         {
             title: "规模化",
-            datas: [
-                {
+            datas: [{
                     title: "路由",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -312,17 +305,15 @@ export default {
         },
         {
             title: "原理",
-            datas: [
-                {
-                    title: "深入响应原理",
-                    des: "请负责人人添加描述，最多 30 个字。",
-                    author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
-                    }
+            datas: [{
+                title: "深入响应原理",
+                des: "请负责人人添加描述，最多 30 个字。",
+                author: {
+                    nickname: "未认领",
+                    avatar: "https://cn.vuejs.org/images/logo.png",
+                    link: "../assets/logo.png"
                 }
-            ]
+            }]
         }
     ]
 };

@@ -5,8 +5,7 @@ export default {
         name: "素燕",
         link: "https://github.com/lefex/FE"
     },
-    footer: [
-        {
+    footer: [{
             title: '一个页面 Vue 实例只能有一个吗？',
             link: 'https://mp.weixin.qq.com/s/_du0IZ5VZXg9ug1SEWNUFg'
         },
@@ -19,8 +18,7 @@ export default {
             link: 'https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE'
         }
     ],
-    nodes: [
-        {
+    nodes: [{
             type: 'text',
             con: `本节内容主要学习如何创建一个 Vue 实例，下面所有的例子，都省略了共用的头部代码，如果想跑通例子
             需要把共用的代码一起引入，共同使用。可以通过 script 标签直接加载 Vue.js 文件。`
@@ -28,8 +26,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            con:
-`<!DOCTYPE html>
+            con: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -60,8 +57,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            con:
-`<body>
+            con: `<body>
     <div id="example-app-1">欢迎来到 {{ msg }}</div>
     <script>
         const obj = {
@@ -91,8 +87,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            con:
-`<body>
+            con: `<body>
     // 模板
     <div id="app">
         <h1>{{ msg }}</h1>
