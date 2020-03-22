@@ -8,7 +8,12 @@
         <div class="post-body">
             <div v-for="(node, index) in article.nodes" :key="index">
                 <p v-if="node.type === 'text'">{{ node.con }}</p>
-                <codehighLight v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang">{{ node.con }}</codehighLight>
+                <code-high-light v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang" dataLine = 1-4,6,15-24 >{{ node.con }}</code-high-light>
+                <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
+            </div>
+            <div v-for="(node, index) in article.nodes" :key="index">
+                <p v-if="node.type === 'text'">{{ node.con }}</p>
+                <code-high-light v-else-if="node.type === 'code'" :code='node.con' :lang="node.lang" dataLine = 1-4,6,15-24 >{{ node.con }}</code-high-light>
                 <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
             </div>
         </div>
@@ -19,12 +24,12 @@
 </template>
 
 <script>
-import codehighLight from "@/components/CodeHighLight";
+import CodeHighLight from "@/components/CodeHighLight";
 import article from "../assets/article/vueInstance.js";
 export default {
     name: "VueInstance",
     components: {
-        codehighLight
+        CodeHighLight
     },
     data: function () {
         return {
@@ -32,7 +37,7 @@ export default {
         }
     },
     mounted() {
-        console.log(this.$route);
+        // console.log(this.$route);
     }
 };
 </script>
