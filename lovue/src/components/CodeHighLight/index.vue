@@ -1,18 +1,24 @@
 <template>
     <div>
         <label>主题切换
-            <select class="form-control"
+            <select
+                class="form-control"
                 name="theme-choice"
-                v-model='theme'>
-                <option v-for="(key,value,index) in themeList"
+                v-model='theme'
+            >
+                <option
+                    v-for="(key,value,index) in themeList"
                     :key="index"
-                    :value="value">{{key}}
+                    :value="value"
+                >{{key}}
                 </option>
             </select>
         </label>
-        <pre v-if="code"
+        <pre
+            v-if="code"
             :data-line='dataLine'
-            :class="{'line-numbers':lineNumbers}">
+            :class="{'line-numbers':lineNumbers}"
+        >
             <code :class="codeClass" class="match-braces" v-text="code"></code>
         </pre>
     </div>
@@ -20,7 +26,7 @@
 
 <script>
 import Prism from "prismjs";
-
+import "prismjs/themes/prism-tomorrow.css";
 Prism.plugins.NormalizeWhitespace.setDefaults({
     // 移除多余空格
     "remove-trailing": true,
@@ -68,7 +74,7 @@ export default {
         return {
             cssPrefix: "/themes/prism-",
             theme: "",
-            defaultTheme:'tomorrow',
+            defaultTheme: "tomorrow",
             themeList: {
                 // "coy",
                 dark: "Dark",
@@ -87,6 +93,7 @@ export default {
                 this.changeLocalCodeColor();
             }
             Prism.highlightAll();
+            console.log("highlight done.");
         },
         changeLocalCodeColor() {
             // 切换局部代码样式
@@ -113,6 +120,7 @@ export default {
                 return;
             }
             this.addCss(theme);
+            console.log("loadCss done.");
         },
         getCodeTheme() {
             this.theme = localStorage.getItem("codeTheme")
@@ -133,22 +141,18 @@ export default {
     mounted() {
         this.getCodeTheme();
         this.highlightAll();
-    },
-    updated() {
-        this.highlightAll();
     }
 };
 </script>
 
-<style scoped>
+<style>
 :root {
-    --local-code-bgc: rgba(0, 255, 255, 0.1);
+    --local-code-bgc: rgba(0, 255, 255, 0.2);
 }
 
 /* 放入scoped内部无效，暂通过全局样式定义 */
 /* 局部代码自定义样式 */
 .line-highlight {
-    /* background: rgba(0, 255, 255, 0.2); */
     background: var(--local-code-bgc);
     margin-left: 3.5rem;
     /* border: solid 1px rgba(0, 255, 255, 0.3); */
@@ -163,7 +167,7 @@ export default {
 }
 </style>
 
-<style>
+<style scoped>
 pre {
     border-radius: 0.5rem;
     max-height: 25rem;

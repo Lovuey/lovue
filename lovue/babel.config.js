@@ -6,7 +6,7 @@ module.exports = {
         ["prismjs",
             {
                 "languages": ['html', "javascript", "css", "markup"],
-                "plugins": ['match-braces', 'autolinker', 'inline-color', 'normalize-whitespace', 'copy-to-clipboard', 'line-highlight', 'show-language', 'line-numbers'],
+                "plugins": ['line-highlight', 'match-braces', 'autolinker', 'inline-color', 'normalize-whitespace', 'copy-to-clipboard', 'show-language', 'line-numbers'],
                 "css": true
             }
         ]
