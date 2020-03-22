@@ -40,8 +40,7 @@
         margin: 0 auto;
         min-height: 700px;
         margin-top: 40px;
-        /* margin-bottom: 80px; */
-        margin-top: 100px;
+        margin-top: 75px;
     }
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;

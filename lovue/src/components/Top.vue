@@ -45,23 +45,19 @@
         align-items: center;
     }
     .logo-icon {
-        width: 50px;
-        height: 50px;
-        /* flex-grow: 0; */
-        /* flex-shrink: 0; */
+        width: 35px;
+        height: 35px;
         margin-left: 40px;
     }
-    /* .nav-title {
-        flex-grow: 1;
-    } */
+    .nav-title {
+        font-size: 24px;
+    }
     .logo-title {
         padding-left: 8px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .nav {
         font-size: 16px;
-        margin: 3px 40px 0 0;
-        /* flex-grow: 0; */
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -74,13 +70,14 @@
     }
     .nav-link {
         margin: 0 5px;
+        padding-bottom: 6px;
         white-space: nowrap;
         text-decoration: none;
         color: #2c3e50;
         display: flex;
-        border-bottom: 3px solid rgba(255,255,255,0);
+        border-bottom: 2px solid rgba(255,255,255,0);
     }
     .nav-link:hover {
-        border-bottom: 3px solid #42b983;
+        border-bottom: 2px solid #42b983;
     }
 </style>

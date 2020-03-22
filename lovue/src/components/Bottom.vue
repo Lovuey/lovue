@@ -60,11 +60,12 @@
         text-decoration: none;
         color: #2c3e50;
         display: flex;
-        border-bottom: 3px solid rgba(255,255,255,0);
+        padding-bottom: 6px;
+        border-bottom: 2px solid rgba(255,255,255,0);
         position: relative;
     }
     .nav-link:hover {
-        border-bottom: 3px solid #42b983;
+        border-bottom: 2px solid #42b983;
     }
     .nav-link-popup:hover .nav-popup {
         display: block;
