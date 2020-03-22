@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Top v-bind:msg="title"/>
+        <Top v-bind:msg="title" />
         <div class="app-content">
             <!-- 这个地方用来渲染路由相关的组件 -->
             <router-view />
@@ -10,43 +10,44 @@
 </template>
 
 <script>
-    // Top 为顶部的导航栏
-    import Top from './components/top.vue';
-    import Buttom from './components/bottom.vue';
+// Top 为顶部的导航栏
+import Top from "./components/top.vue";
+import Buttom from "./components/bottom.vue";
 
-    export default {
-        name: 'App',
-        components: {
-            Top, Buttom
-        },
-        data: function () {
-            return {
-                title: 'Vue 虚拟实验室'
-            }
-        }
+export default {
+    name: "App",
+    components: {
+        Top,
+        Buttom
+    },
+    data: function() {
+        return {
+            title: "Vue 虚拟实验室"
+        };
     }
+};
 </script>
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f6f8f9;
-    }
-    .app-content {
-        box-sizing: border-box;
-        max-width: 1256px;
-        margin: 0 auto;
-        min-height: 700px;
-        margin-top: 40px;
-        /* margin-bottom: 80px; */
-        margin-top: 100px;
-    }
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8f9;
+}
+.app-content {
+    box-sizing: border-box;
+    max-width: 1256px;
+    margin: 0 auto;
+    min-height: 700px;
+    margin-top: 40px;
+    /* margin-bottom: 80px; */
+    margin-top: 100px;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
 </style>

@@ -5,8 +5,7 @@ export default {
         name: "素燕",
         link: "https://github.com/lefex/FE"
     },
-    nodes: [
-        {
+    nodes: [{
             type: 'h1',
             con: '例1：创建一个 Vue 实例'
         },
@@ -18,8 +17,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            con:
-`<!DOCTYPE html>
+            con: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
