@@ -1,33 +1,37 @@
 <template>
     <div>
         <label>主题切换
-            <select
-                class="form-control"
+            <select class="form-control"
                 name="theme-choice"
-                v-model='theme'
-            >
-                <option
-                    v-for="(key,value,index) in themeList"
+                v-model='theme'>
+                <option v-for="(key,value,index) in themeList"
                     :key="index"
-                    :value="value"
-                >{{key}}</option>
-            </select></label>
-        <pre
-            v-if="code"
+                    :value="value">{{key}}
+                </option>
+            </select>
+        </label>
+        <pre v-if="code"
             :data-line='dataLine'
-            :class="{'line-numbers':lineNumbers}"
-        ><code :class="codeClass" class="match-braces" v-text="code">
-      </code></pre>
+            :class="{'line-numbers':lineNumbers}">
+            <code :class="codeClass" class="match-braces" v-text="code"></code>
+        </pre>
     </div>
 </template>
+
 <script>
 import Prism from "prismjs";
+
 Prism.plugins.NormalizeWhitespace.setDefaults({
-    "remove-trailing": true, // 移除多余空格
-    "remove-indent": true, // 移除代码块整体的不必要缩进
-    "left-trim": true, // 移除代码块头的空格
-    "right-trim": true, //移除代码块尾的空格
-    "break-lines": 80 //超过80字符自动换行
+    // 移除多余空格
+    "remove-trailing": true,
+    // 移除代码块整体的不必要缩进
+    "remove-indent": true,
+    // 移除代码块头的空格
+    "left-trim": true,
+    // 移除代码块尾的空格
+    "right-trim": true,
+    // 超过80字符自动换行
+    "break-lines": 80
     // 'indent': 1, //每行添加缩进
     // 'tabs-to-spaces': 4, //
     // 'spaces-to-tabs': 4 //
@@ -36,11 +40,29 @@ Prism.plugins.NormalizeWhitespace.setDefaults({
 export default {
     name: "CodeHighLight",
     props: {
-        code: { type: String, required: true }, //父组件的代码块变量
-        lang: { type: String, default: "javascript" }, //代码语言，默认为JS
-        lineNumbers: { type: Boolean, default: true }, //是否显示行号，默认显示
-        dataLine: { default: false }, //针对指定行数代码样式进行自定义
-        localCodeBgColor: { type: String } // 设置局部代码高亮背景色，不设置默认为rgba(0, 255, 255, 0.2)
+        // 父组件的代码块变量
+        code: {
+            type: String,
+            required: true
+        },
+        // 代码语言，默认为JS
+        lang: {
+            type: String,
+            default: "javascript"
+        },
+        // 是否显示行号，默认显示
+        lineNumbers: {
+            type: Boolean,
+            default: true
+        },
+        // 针对指定行数代码样式进行自定义
+        dataLine: {
+            default: false
+        },
+        // 设置局部代码高亮背景色，不设置默认为rgba(0, 255, 255, 0.2)
+        localCodeBgColor: {
+            type: String
+        }
     },
     data() {
         return {
@@ -117,7 +139,8 @@ export default {
     }
 };
 </script>
-<style>
+
+<style scoped>
 :root {
     --local-code-bgc: rgba(0, 255, 255, 0.1);
 }
@@ -139,7 +162,8 @@ export default {
     font-weight: bold;
 }
 </style>
-<style scoped>
+
+<style>
 pre {
     border-radius: 0.5rem;
     max-height: 25rem;
