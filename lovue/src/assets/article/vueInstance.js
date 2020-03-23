@@ -26,7 +26,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            stressLine: '8-9',
+            stressLine: '1,3,5-9',
             con: `<!DOCTYPE html>
 <html lang="en">
 
