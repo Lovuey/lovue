@@ -1,19 +1,5 @@
 <template>
     <div>
-        <label>主题切换
-            <select
-                class="form-control"
-                name="theme-choice"
-                v-model='theme'
-            >
-                <option
-                    v-for="(key,value,index) in themeList"
-                    :key="index"
-                    :value="value"
-                >{{key}}
-                </option>
-            </select>
-        </label>
         <pre
             v-if="code"
             :data-line='dataLine'
@@ -42,7 +28,6 @@ Prism.plugins.NormalizeWhitespace.setDefaults({
     // 'tabs-to-spaces': 4, //
     // 'spaces-to-tabs': 4 //
 });
-
 export default {
     name: "CodeHighLight",
     props: {
@@ -73,8 +58,8 @@ export default {
     data() {
         return {
             cssPrefix: "/themes/prism-",
-            theme: "",
             defaultTheme: "tomorrow",
+            theme: "",
             themeList: {
                 // "coy",
                 dark: "Dark",
@@ -121,11 +106,6 @@ export default {
             }
             this.addCss(theme);
             console.log("loadCss done.");
-        },
-        getCodeTheme() {
-            this.theme = localStorage.getItem("codeTheme")
-                ? localStorage.getItem("codeTheme")
-                : this.defaultTheme;
         }
     },
     computed: {
@@ -139,7 +119,9 @@ export default {
         }
     },
     mounted() {
-        this.getCodeTheme();
+        this.highlightAll();
+    },
+    updated() {
         this.highlightAll();
     }
 };
@@ -156,6 +138,22 @@ export default {
     background: var(--local-code-bgc);
     margin-left: 3.5rem;
     /* border: solid 1px rgba(0, 255, 255, 0.3); */
+}
+/*  */
+pre[data-line] {
+    position: relative;
+    padding: 1em 0 1em 3em;
+}
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+    content: attr(data-start);
+    position: absolute;
+    top: 0.4em;
+    left: 0.6em;
+    min-width: 1em;
+    padding: 0 0.5em;
+    font: bold 90%/1.5 sans-serif;
 }
 
 /* 代码中括号选中样式 */

@@ -13,7 +13,6 @@
 // Top 为顶部的导航栏
 import Top from "@/components/Top.vue";
 import Buttom from "@/components/Bottom.vue";
-
 export default {
     name: "App",
     components: {
