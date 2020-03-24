@@ -26,7 +26,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            stressLine: '1,3,5-9',
+            stressLine: '8-9',
             con: `<!DOCTYPE html>
 <html lang="en">
 
@@ -58,6 +58,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
+            stressLine: '2',
             con: `<body>
     <div id="example-app-1">欢迎来到 {{ msg }}</div>
     <script>
@@ -88,6 +89,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
+            stressLine: '3-9',
             con: `<body>
     // 模板
     <div id="app">
