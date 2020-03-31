@@ -6,7 +6,7 @@ cache:
 install:
 - cd lovue && npm install
 script:
-- cd lovue && npm run build
+- npm run build
 branches:
   only:
   - master
