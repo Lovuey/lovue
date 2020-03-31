@@ -25,7 +25,7 @@ export default {
                     des: "关于computed, methods, watchers的深入理解",
                     author: {
                         nickname: "张家博",
-                        avatar: "http://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
+                        avatar: "https://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
                         link: "https://github.com/jarbozhang"
                     }
                 },
@@ -70,7 +70,7 @@ export default {
                     des: "请负责人人添加描述，最多 30 个字",
                     author: {
                         nickname: "chuhuangvio",
-                        avatar: "https://img04.sogoucdn.com/app/a/100520146/7fb1e9baa386272c2a62daa26f8a8332",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "https://github.com/chuhuangvio"
                     }
                 }
