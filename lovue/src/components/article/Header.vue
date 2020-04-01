@@ -11,8 +11,7 @@
             <select
                 class="form-control"
                 name="theme-choice"
-                v-model='theme'
-            >
+                v-model='theme'>
                 <option
                     v-for="(key,value,index) in themeList"
                     :key="index"
