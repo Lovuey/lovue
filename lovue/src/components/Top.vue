@@ -30,7 +30,7 @@
 <style scoped>
     .top-box {
         margin: 0;
-        padding: 0;
+        padding: 0 40px;
         background-color: #fff;
         border-bottom: #f5f5f5 1px solid;
         display: flex;
@@ -38,7 +38,7 @@
         top: 0;
         left: 0;
         right: 0;
-        width: 100%;
+        /* width: 100%; */
         z-index: 999;
         flex-direction: row;
         justify-content: space-between;
@@ -47,7 +47,6 @@
     .logo-icon {
         width: 35px;
         height: 35px;
-        margin-left: 40px;
     }
     .nav-title {
         font-size: 24px;
@@ -70,7 +69,7 @@
     }
     .nav-link {
         margin: 0 5px;
-        padding-bottom: 6px;
+        padding: 8px 0 6px 0;
         white-space: nowrap;
         text-decoration: none;
         color: #2c3e50;
