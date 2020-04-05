@@ -80,7 +80,8 @@ export default {
             title: "组件",
             datas: [{
                     title: "组件基础",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "介绍组件的基本使用，组件是可复用的 Vue 实例",
+                    route: '/componentBasics',
                     author: {
                         nickname: "素燕",
                         avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
@@ -214,11 +215,12 @@ export default {
                 },
                 {
                     title: "过滤器",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "把一个数据转换成另一种形式的数据",
+                    route: "/filter",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 }
             ]
