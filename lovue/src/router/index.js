@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import VueInstance from '@/views/vueInstance/VueInstance.vue'
+import Filter from '@/views/filter/Filter.vue'
 
 Vue.use(VueRouter);
 
@@ -11,10 +12,17 @@ const routes = [
         name: 'Home',
         component: Home
     },
+    // Vue 实例 demo
     {
         path: '/vueinstance',
         name: 'VueInstance',
         component: VueInstance
+    },
+    // 过滤器 demo
+    {
+        path: '/filter',
+        name: 'Filter',
+        component: Filter
     }
 ];
 
