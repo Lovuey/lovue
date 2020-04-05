@@ -30,7 +30,7 @@
         },
         data() {
             return {
-                
+
             }
         },
         methods: {
@@ -127,5 +127,39 @@
         font-size: 14px;
         text-align: left;
         padding: 0px 12px;
+    }
+    @media screen and (max-width: 1200px) {
+        .item-box {
+            width: 25%;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .item-box {
+            width: 33.33%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .item-box {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .item-box {
+            width: 100%;
+            height: 160px;
+        }
+        .item-title {
+            margin-top: 18px;
+            text-align: right;
+        }
+        .item-des {
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+        }
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
     }
 </style>
