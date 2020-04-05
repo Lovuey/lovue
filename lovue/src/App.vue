@@ -30,7 +30,7 @@ export default {
 <style lang="less">
 @import "./styles/lovue.less";
 /* 一行代码置灰 */
-html {
+/* html {
     filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -38,5 +38,5 @@ html {
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
-}
+} */
 </style>
