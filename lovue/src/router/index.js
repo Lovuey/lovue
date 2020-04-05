@@ -3,8 +3,10 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import VueInstance from '@/views/vueInstance/VueInstance.vue'
 import Filter from '@/views/filter/Filter.vue'
+// 以 @ 符号方式引入，会自动从 scr 目录开始查找
 import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
 
+// 加载 VueRouter 中间件
 Vue.use(VueRouter);
 
 const routes = [
@@ -33,6 +35,7 @@ const routes = [
     }
 ];
 
+// 创建 VueRouter 实例
 const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,

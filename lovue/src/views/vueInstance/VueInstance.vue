@@ -5,19 +5,24 @@
         <!-- body -->
         <div class="post-body">
             <div v-for="(node, index) in article.nodes" :key="index">
+                <!-- 文本节点解析 -->
                 <p v-if="node.type === 'text'" class="text">{{ node.con }}</p>
+                <!-- 代码组件 -->
                 <codehigh-light v-else-if="node.type === 'code'"
                     :code='node.con'
                     :lang='node.lang'
                     :dataLine = "node.stressLine">{{ node.con }}
                 </codehigh-light>
+                <!-- 所以的实例需要对应一个具体的组件，用来实现例子 -->
                 <div v-else-if="node.type === 'example'">
                     <h3 class="code-show-title">代码显示结果：</h3>
                     <div class="code-exam-show">
+                        <!-- example1 加载组件 Example1 -->
                         <example1 v-if="node.con === 'example1'"></example1>
                         <example2 v-if="node.con === 'example2'"></example2>
                     </div>
                 </div>
+                <!-- 标题组件 -->
                 <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
             </div>
         </div>
@@ -27,11 +32,17 @@
 </template>
 
 <script>
+// 代码组件
 import CodehighLight from "@/components/CodeHighLight";
+// 文章头部组件
 import ArticleHeader from "@/components/article/Header";
+// 文章底部组件
 import ArticleFooter from "@/components/article/Footer";
+// 例1
 import Example1 from "./Example1";
+// 例2
 import Example2 from "./Example2";
+// 文章数据
 import article from "@/assets/article/vueInstance.js";
 
 export default {
@@ -47,9 +58,6 @@ export default {
         return {
             article
         }
-    },
-    mounted() {
-        console.log(this.$route);
     }
 };
 </script>
