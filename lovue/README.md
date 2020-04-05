@@ -19,6 +19,7 @@ dev 分支为开发分支，可以在这个分支提交代码；
 
 ## 目录说明
 
+```
 ├── README.md
 ├── babel.config.js
 ├── node_modules
@@ -40,8 +41,11 @@ dev 分支为开发分支，可以在这个分支提交代码；
 │   ├── utils `项目中通用的工具类`
 │   └── views `页面，每一个 demo 需要对应一个`
 └── vue.config.js
+```
 
 ### scr 目录详细说明
+
+```
 
 ├── App.vue
 ├── assets
@@ -78,13 +82,14 @@ dev 分支为开发分支，可以在这个分支提交代码；
         ├── Example2.vue `每个 demo 中的例子，例子 2`
         └── VueInstance.vue `Vue 实例入口`
 
+```
 ## 如何开启第一个 demo
 
 **第1步：**认领 demo
 
 未认领的 demo，会标有“未认领”的字样，如果你有想认领的 demo，直接修改 `/lovue/src/const/content.js`文件，把你想认领的 demo 修改为自己，要保证信息全面（头像、昵称、标题、描述）。以 PR 的形式提交到 **dev 分支**；比如：
 
-```json
+```js
 {
 	title: "Vue 实例",
 	des: "通过用 Vue 函数创建一个新的 Vue 实例。",
@@ -147,7 +152,7 @@ dev 分支为开发分支，可以在这个分支提交代码；
 
 每个 demo 其实是文章与实例的结合体，所有的文章需要在 ``/lovue/src/assets/article`目录下创建，名字与 demo 组件的保持一致。比如 vueInstance.js。每篇文章使用统一的数据结构：
 
-```json
+```js
 export default {
     title: "Vue 实例详解",
     subTitle: "本 Demo 通过用 Vue 函数创建一个新的 Vue 实例。",
@@ -197,7 +202,7 @@ export default {
 
 所以的文件准备就绪后，需要在你所认领的 demo 的位置  `/lovue/src/const/content.js` 添加 route 参数。比如：
 
-```json
+```js
 {
 	title: "Vue 实例",
 	des: "通过用 Vue 函数创建一个新的 Vue 实例。",
@@ -211,7 +216,7 @@ export default {
 
 在  `/lovue/src/router/index.js`中添加路由：
 
-```json
+```js
 const routes = [
     // Vue 实例 demo
     {
