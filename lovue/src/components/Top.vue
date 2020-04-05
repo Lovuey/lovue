@@ -1,6 +1,6 @@
 <template>
     <div class="top-box">
-        <a class="nav" href='/lovue'>
+        <a class="nav" href='/'>
             <div class="nav">
                 <img class="logo-icon" src="../assets/logo.png" alt="">
                 <span class="logo-title">Lovue</span>

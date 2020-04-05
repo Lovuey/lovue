@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import VueInstance from '@/views/vueInstance/VueInstance.vue'
 import Filter from '@/views/filter/Filter.vue'
+import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,12 @@ const routes = [
         path: '/filter',
         name: 'Filter',
         component: Filter
+    },
+    // 组件基础 demo
+    {
+        path: '/componentBasics',
+        name: 'ComponentBasics',
+        component: ComponentBasics
     }
 ];
 
