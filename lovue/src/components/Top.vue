@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .top-box {
   padding: 0 40px;
   height: 70px;

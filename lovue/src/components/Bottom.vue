@@ -37,7 +37,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .bottom-box {
   padding: 40px;
   /* height: 40px; */

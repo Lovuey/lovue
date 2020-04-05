@@ -1,22 +1,20 @@
 <template>
-    <div>
-        <div class="content-box">
-            <div v-for="(alist, index) in lists" :key="index">
-                <h2>{{ alist.title }}</h2>
-                <div class="list-box">
-                    <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
-                        <div class="card-box" v-on:click="cardClicked(item)">
-                            <div v-if="item.author" class="user-info-box">
-                                <img :src="item.author.avatar" class="avtar">
-                                <p class="nickname">{{ item.author.nickname }}</p>
-                            </div>
-                            <h3 class="item-title">{{ item.title }}</h3>
-                            <p class="item-des">{{ item.des }}</p>
+    <!-- 首页内容区域 -->
+    <div class="content-box">
+        <div v-for="(alist, index) in lists" :key="index">
+            <h2>{{ alist.title }}</h2>
+            <div class="list-box">
+                <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
+                    <div class="card-box" v-on:click="cardClicked(item)">
+                        <div v-if="item.author" class="user-info-box">
+                            <img :src="item.author.avatar" class="avtar">
+                            <p class="nickname">{{ item.author.nickname }}</p>
                         </div>
+                        <h3 class="item-title">{{ item.title }}</h3>
+                        <p class="item-des">{{ item.des }}</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
@@ -48,7 +46,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
     .content-box {
         display: flex;
         background-color: #fff;
