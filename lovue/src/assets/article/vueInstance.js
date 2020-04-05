@@ -26,7 +26,7 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            stressLine: '8-9',
+            stressLine: '9',
             con: `<!DOCTYPE html>
 <html lang="en">
 
@@ -89,37 +89,39 @@ export default {
         {
             type: 'code',
             lang: 'html',
-            stressLine: '3-9',
-            con: `<body>
-    // 模板
-    <div id="app">
-        <h1>{{ msg }}</h1>
-    </div>
-    <div id="app-body">
-        <h4>{{ title }}</h4>
-    </div>
-    // 脚本
-    <script>
-        const vm = new Vue({
-            el: '#app',
-            data: function () {
-                return {
-                    msg: "欢迎来到前端小课",
-                }
+            stressLine: '3,6',
+            con: `// 模板
+<div id="app">
+    <h1>{{ msg }}</h1>
+</div>
+<div id="app-body">
+    <h4>{{ title }}</h4>
+</div>`},
+        {
+            type: 'code',
+            lang: 'html',
+            stressLine: '3,13',
+            con: `// 脚本
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                msg: "欢迎来到前端小课",
             }
-        });
-    </script>
-    <script>
-        const vmBody = new Vue({
-            el: '#app-body',
-            data: function () {
-                return {
-                    title: "Vue 实例讲解"
-                }
+        }
+    });
+</script>
+<script>
+    const vmBody = new Vue({
+        el: '#app-body',
+        data: function () {
+            return {
+                title: "Vue 实例讲解"
             }
-        });
-    </script>
-</body>`
+        }
+    });
+</script>`
         },
         {
             type: 'example',
