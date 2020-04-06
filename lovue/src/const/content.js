@@ -60,7 +60,7 @@ export default {
                     title: "事件处理",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "唐超",
+                        nickname: "未认领",
                         avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "../assets/logo.png"
                     }
