@@ -232,7 +232,6 @@ if (!(this instanceof Vue)) {
         {
             type: 'img',
             con: 'https://cn.vuejs.org/images/lifecycle.png',
-            // height: '300px',
             width: "600px"
         },
         {

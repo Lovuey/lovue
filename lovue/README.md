@@ -183,12 +183,20 @@ export default {
         },
         {
             type: 'example',
-            con: 'example2'
+            con: 'example2',
+            // demo 在 public 文件下完整的 demo
+            source: '/article/vueInstance/example3.html'
+        },
+        {
+            type: 'img',
+            con: 'https://cn.vuejs.org/images/lifecycle.png',
+            width: "600px"
         },
     ]
 };
 ```
-
+所有的 demo 需要 `public/article` 创建一个对应 demo 的文件夹，比如 vueInstance。这个文件下每个 demo 可以在浏览器正常
+访问。
 
 
 现在支持的内容节点类型有，如果有需求可自行扩展：
@@ -197,6 +205,7 @@ export default {
 - code：代码；
 - h1：标题；
 - example：代码示例；
+- img: 图片
 
 **第4步**：添加路由
 
@@ -226,7 +235,6 @@ const routes = [
     }
 ];
 ```
-
 
 
 到此所有的准备工作完毕，在首页点击卡片，观察是否能正常跳转。如果能正常跳转，说明配置成功。
