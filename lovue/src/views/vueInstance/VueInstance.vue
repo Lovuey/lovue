@@ -8,7 +8,9 @@
                 <!-- 文本节点解析 -->
                 <p v-if="node.type === 'text'" class="text">{{ node.con }}</p>
                 <!-- 图片 -->
-                <img v-if="node.type === 'img'" class="image" :src="node.con">
+                <div v-if="node.type === 'img'" class="image-box">
+                    <img class="image" :src="node.con" :height="node.height" :width="node.width">
+                </div>
                 <!-- 代码组件 -->
                 <codehigh-light v-else-if="node.type === 'code'"
                     :code='node.con'
@@ -22,11 +24,11 @@
                         <!-- example1 加载组件 Example1 -->
                         <example1 v-if="node.con === 'example1'"></example1>
                         <example2 v-if="node.con === 'example2'"></example2>
+                        <example3 v-if="node.con === 'example3'"></example3>
                     </div>
                     <a :href="node.source" target="_blank" rel="noopener noreferrer">
                         <div class="code-download">下载本例完整代码</div>
                     </a>
-                   
                 </div>
                 <!-- 标题组件 -->
                 <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
@@ -48,6 +50,8 @@ import ArticleFooter from "@/components/article/Footer";
 import Example1 from "./Example1";
 // 例2
 import Example2 from "./Example2";
+// 例3
+import Example3 from "./Example3";
 // 文章数据
 import article from "@/assets/article/vueInstance";
 
@@ -57,6 +61,7 @@ export default {
         'codehigh-light': CodehighLight,
         'example1': Example1,
         'example2': Example2,
+        'example3': Example3,
         'article-header': ArticleHeader,
         'article-footer': ArticleFooter,
     },

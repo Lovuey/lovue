@@ -221,5 +221,86 @@ if (!(this instanceof Vue)) {
             con: 'example2',
             source: '/article/vueInstance/example2.html'
         },
+        {
+            type: 'h1',
+            con: '例3：Vue 实例的生命周期'
+        },
+        {
+            type: 'text',
+            con: '生命周期钩子，也就是当创建 Vue 实例的时候，会发出一些事件给使用者，这样可以根据不同的事件来处理不同的事情。图来自 Vue.js 官网。'
+        },
+        {
+            type: 'img',
+            con: 'https://cn.vuejs.org/images/lifecycle.png',
+            // height: '300px',
+            width: "600px"
+        },
+        {
+            type: 'code',
+            lang: 'html',
+            stressLine: '3,5',
+            con: `// 模板
+<div id="app">
+    <h3>{{ msg }}</h3>
+    <h4>下面是 Vue 实例的声明周期函数</h4>
+    <p v-for="(item, index) in lists">调用了 {{ index + 1 }}: - {{ item }}</p>
+</div>`},
+        {
+            type: 'code',
+            lang: 'html',
+            stressLine: '3',
+            con: `// 模板
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: function () {
+            return {
+                lists: []
+            }
+        },
+        beforeCreated: function () {
+            this.lists.push('beforeCreated');
+            console.log('life beforeCreated');
+        },
+        created: function () {
+            this.lists.push('created');
+            console.log('life created');
+        },
+        beforeMount: function () {
+            this.lists.push('beforeMount');
+            console.log('life beforeMount');
+        },
+        mounted: function () {
+            this.lists.push('mounted');
+            console.log('life mounted');
+        },
+        beforeUpdate: function () {
+            console.log('life beforeUpdate');
+        },
+        updated: function () {
+            console.log('life updated');
+        },
+        beforeDestory: function () {
+            console.log('life beforeDestory');
+        },
+        destroyed: function () {
+            console.log('life destroyed');
+        }
+    });
+</script>`
+        },
+        {
+            type: 'example',
+            con: 'example3',
+            source: '/article/vueInstance/example3.html'
+        },
+        {
+            type: 'h1',
+            con: '写在最后'
+        },
+        {
+            type: 'text',
+            con: '本节内容通过几个例子说明 Vue 的创建过程。'
+        },
     ]
 };
