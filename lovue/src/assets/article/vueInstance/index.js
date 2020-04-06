@@ -167,7 +167,7 @@ if (!(this instanceof Vue)) {
         },
         {
             type: 'h1',
-            con: '例2：一个页面中创建多个 Vue 实例'
+            con: '例2：一个页面中创建多个 Vue 实例（实际项目中很少这样用）'
         },
         {
             type: 'text',
