@@ -7,6 +7,8 @@
             <div v-for="(node, index) in article.nodes" :key="index">
                 <!-- 文本节点解析 -->
                 <p v-if="node.type === 'text'" class="text">{{ node.con }}</p>
+                <!-- 图片 -->
+                <img v-if="node.type === 'img'" class="image" :src="node.con">
                 <!-- 代码组件 -->
                 <codehigh-light v-else-if="node.type === 'code'"
                     :code='node.con'
@@ -21,6 +23,10 @@
                         <example1 v-if="node.con === 'example1'"></example1>
                         <example2 v-if="node.con === 'example2'"></example2>
                     </div>
+                    <a :href="node.source" target="_blank" rel="noopener noreferrer">
+                        <div class="code-download">下载本例完整代码</div>
+                    </a>
+                   
                 </div>
                 <!-- 标题组件 -->
                 <h2 v-else-if="node.type === 'h1'">{{ node.con }}</h2>
@@ -43,7 +49,7 @@ import Example1 from "./Example1";
 // 例2
 import Example2 from "./Example2";
 // 文章数据
-import article from "@/assets/article/vueInstance.js";
+import article from "@/assets/article/vueInstance";
 
 export default {
     name: "VueInstance",
