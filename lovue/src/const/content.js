@@ -1,7 +1,8 @@
 export default {
     lists: [{
             title: "基础",
-            datas: [{
+            datas: [
+                {
                     title: "Vue 实例",
                     des: "Vue 实例作为 Vue 的入口，是入门 Vue 的第一步。",
                     route: "/vueinstance",
