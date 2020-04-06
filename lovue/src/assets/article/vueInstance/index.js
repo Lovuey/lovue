@@ -163,7 +163,7 @@ if (!(this instanceof Vue)) {
         {
             type: 'example',
             con: 'example1',
-            source: ''
+            source: '/article/vueInstance/example1.html'
         },
         {
             type: 'h1',
@@ -187,24 +187,30 @@ if (!(this instanceof Vue)) {
         {
             type: 'code',
             lang: 'html',
-            stressLine: '3,13',
-            con: `// 脚本
+            stressLine: '3',
+            con: `// 脚本：第一个实例
 <script>
     const vm = new Vue({
         el: '#app',
         data: function () {
             return {
-                msg: "欢迎来到前端小课",
+                msg: "欢迎来到 Vue 虚拟实验室，我是第一个实例",
             }
         }
     });
-</script>
+</script>`
+        },
+        {
+            type: 'code',
+            lang: 'html',
+            stressLine: '3',
+            con: `// 脚本：第二个实例
 <script>
     const vmBody = new Vue({
         el: '#app-body',
         data: function () {
             return {
-                title: "Vue 实例讲解"
+                title: "我是第二个实例"
             }
         }
     });
@@ -212,7 +218,8 @@ if (!(this instanceof Vue)) {
         },
         {
             type: 'example',
-            con: 'example2'
+            con: 'example2',
+            source: '/article/vueInstance/example2.html'
         },
     ]
 };

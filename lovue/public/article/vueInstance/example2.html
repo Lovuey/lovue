@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue实例</title>
+    <!-- // 加载 js 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../../example.css">
+</head>
+
+<body>
+    <!-- 这里写入各个例子的内容 -->
+    <h1>例2：一个页面中创建多个 Vue 实例</h1>
+    <div id="app">
+        <p>{{ msg }}</p>
+    </div>
+    <div id="app-body">
+        <p>{{ title }}</p>
+    </div>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    msg: "欢迎来到 Vue 虚拟实验室，我是第一个实例",
+                }
+            }
+        });
+    </script>
+    <script>
+        const vmBody = new Vue({
+            el: '#app-body',
+            data: function () {
+                return {
+                    title: "我是第二个实例"
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
