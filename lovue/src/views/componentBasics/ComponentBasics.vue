@@ -32,7 +32,7 @@ import ArticleHeader from "@/components/article/Header";
 import ArticleFooter from "@/components/article/Footer";
 import Example1 from "./Example1";
 import Example2 from "./Example2";
-import article from "@/assets/article/filter.js";
+import article from "@/assets/article/filter";
 
 export default {
     name: "VueInstance",

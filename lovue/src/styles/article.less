@@ -2,8 +2,8 @@
 
 /* 文章头部样式 */
 .post-header {
-    border-left: 4px solid #d0021b;
-    border-right: 4px solid #d0021b;
+    border-left: 4px solid @h-color;
+    border-right: 4px solid @h-color;
     background-color: white;
     padding: 5px 20px;
     border-radius: 4px;
@@ -17,6 +17,8 @@
     .des {
         font-size: @text-font-size;
         color: @text-222-color;
+        letter-spacing: 1px;
+        line-height: 2;
         text-align: left;
     }
     .author {
@@ -38,10 +40,23 @@
     .code-exam-show {
         padding: 10px 10px;
         padding-bottom: 20px;
-        border: #1890ff 1px solid;
+        border: @theme-color 1px solid;
     }
     .code-show-title {
-        color: #1890ff;
+        color: @theme-color;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .code-download {
+        display: inline-block;
+        margin: 20px 0;
+        background:  @theme-color;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: 700;
+        cursor: pointer;
     }
     .text {
         font-size: @text-font-size;
@@ -51,7 +66,7 @@
         text-align: left;
     }
     h2 {
-        border-left: 4px solid #d0021b;
+        border-left: 4px solid @h-color;
         background-color: white;
         padding: 5px 20px;
     }

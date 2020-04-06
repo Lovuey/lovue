@@ -3,7 +3,7 @@ export default {
             title: "基础",
             datas: [{
                     title: "Vue 实例",
-                    des: "通过用 Vue 函数创建一个新的 Vue 实例。",
+                    des: "Vue 实例作为 Vue 的入口，是入门 Vue 的第一步。",
                     route: "/vueinstance",
                     author: {
                         nickname: "素燕",

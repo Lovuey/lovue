@@ -1,5 +1,5 @@
 export default {
-    title: "过滤器",
+    title: "组件基础",
     subTitle: "过滤器是在项目中使用非常频繁的特性，可以把一条数据转换成你想要的格式。",
     author: {
         name: "素燕",
