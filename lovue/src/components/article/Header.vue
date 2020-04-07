@@ -35,7 +35,7 @@ export default {
     },
     data() {
         return {
-            cssPrefix: "/themes/prism-",
+            cssPrefix: "./themes/prism-",
             defaultTheme,
             theme,
             themeList: {

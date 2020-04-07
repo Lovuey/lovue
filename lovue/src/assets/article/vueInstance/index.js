@@ -163,7 +163,7 @@ if (!(this instanceof Vue)) {
         {
             type: 'example',
             con: 'example1',
-            source: '/article/vueInstance/example1.html'
+            source: '/lovue/article/vueInstance/example1.html'
         },
         {
             type: 'h1',
@@ -219,7 +219,7 @@ if (!(this instanceof Vue)) {
         {
             type: 'example',
             con: 'example2',
-            source: '/article/vueInstance/example2.html'
+            source: '/lovue/article/vueInstance/example2.html'
         },
         {
             type: 'h1',
@@ -291,7 +291,7 @@ if (!(this instanceof Vue)) {
         {
             type: 'example',
             con: 'example3',
-            source: '/article/vueInstance/example3.html'
+            source: '/lovue/article/vueInstance/example3.html'
         },
         {
             type: 'h1',

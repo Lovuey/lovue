@@ -2,8 +2,8 @@
     <div>
         <pre
             v-if="code"
-            :data-line='dataLine'
-            :class="{'line-numbers':lineNumbers}"
+            :data-line="dataLine"
+            :class="{ 'line-numbers': lineNumbers }"
         >
             <code :class="codeClass" class="match-braces" v-text="code"></code>
         </pre>
@@ -57,7 +57,7 @@ export default {
     },
     data() {
         return {
-            cssPrefix: "/themes/prism-",
+            cssPrefix: "./themes/prism-",
             defaultTheme: "tomorrow",
             theme: "",
             themeList: {
