@@ -1,10 +1,6 @@
 <template>
     <div>
-        <pre
-            v-if="code"
-            :data-line='dataLine'
-            :class="{'line-numbers':lineNumbers}"
-        >
+        <pre v-if="code" :data-line='dataLine' :class="{'line-numbers':lineNumbers}">
             <code :class="codeClass" class="match-braces" v-text="code"></code>
         </pre>
     </div>
@@ -131,38 +127,6 @@ export default {
 :root {
     --local-code-bgc: rgba(0, 255, 255, 0.2);
 }
-
-/* 放入scoped内部无效，暂通过全局样式定义 */
-/* 局部代码自定义样式 */
-.line-highlight {
-    background: var(--local-code-bgc);
-    margin-left: 3.5rem;
-    /* border: solid 1px rgba(0, 255, 255, 0.3); */
-}
-/*  */
-pre[data-line] {
-    position: relative;
-    padding: 1em 0 1em 3em;
-}
-
-.line-highlight:before,
-.line-highlight[data-end]:after {
-    content: attr(data-start);
-    position: absolute;
-    top: 0.4em;
-    left: 0.6em;
-    min-width: 1em;
-    padding: 0 0.5em;
-    font: bold 90%/1.5 sans-serif;
-}
-
-/* 代码中括号选中样式 */
-.token.punctuation.brace-hover,
-.token.punctuation.brace-selected {
-    color: red;
-    outline: none;
-    font-weight: bold;
-}
 </style>
 
 <style scoped>
@@ -170,6 +134,11 @@ pre {
     border-radius: 0.5rem;
     max-height: 25rem;
     overflow: auto;
+}
+
+pre /deep/ .line-highlight {
+    background: var(--local-code-bgc);
+    margin-left: 3.5rem;
 }
 
 /* 美化代码块滚动条样式 */
