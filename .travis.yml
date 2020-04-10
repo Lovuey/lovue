@@ -1,0 +1,24 @@
+language: node_js
+node_js: stable
+cache:
+  directories:
+  - lovue/node_modules
+install:
+- cd lovue && npm install
+script:
+- npm run build
+- cd dist && cp index.html 404.html
+branches:
+  only:
+  - master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  local_dir: lovue/dist
+  on:
+    branch: master
+env:
+  global:
+    secure: R+kKBAIBnnwVRrVkwTW82R24UqsLkP8Wp5NE3wFCTdTtz9a65d4H7DP5Dvf027JBcB27Kz9R43dpdX8FxyL3h7vedmgSDEJpaWn/nHId7JYMK/2QAhYi720kbf9vTqp20xhSTOP/777IQwiUGbvjq/rhOcM8wZxFygf8Gnnld6CjuobohkD30T7ikYH4XT+WG0BIkDH1AGtEoMmE9hUHChMZRx9Gh0JifXay8nO2ZFcNEEEpIkBaR2eHwiWnFtEuoc/azYDNcxmDeu8lTZ2HeCiIPXNLc7wumQh6BZKvR91f3goz/YVn350/IYgv32nk+PTvlfRZ3Vak53MwFapF3/qABlTl5f6Kh49wp0f5NlHZXQtK5WCG6v2M09RP6oQNfF9wl3donT+ybeElGPiwD7W6pSFSr4fGWzHi/CqZCcJAQknKXB3TPP9vFtgMwMGJS+GFqo/JBhjMgbfROTznfxKTd1BTXVQeKr79k46o+VIRryZpdw2Vl1E95aOravHyAcZt5FBgdzq5xXd8H1NJGGN5Vx7BZ6bicN1p1luo7M6CTX0DYbcx+pD4Pws4Hxo2UQWuDqBLKtFNYRGf+ascn5gY4vZjYyco73CZpm6Va3sAHoCP2cC68kQxNwrCslgvAiokwvE1HpbckWlsZOV1IPICXbNzaZRN6BWy8ZirvJM=
+

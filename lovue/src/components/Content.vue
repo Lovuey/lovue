@@ -1,22 +1,20 @@
 <template>
-    <div>
-        <div class="content-box">
-            <div v-for="(alist, index) in lists" :key="index">
-                <h2>{{ alist.title }}</h2>
-                <div class="list-box">
-                    <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
-                        <div class="card-box" v-on:click="cardClicked(item)">
-                            <div v-if="item.author" class="user-info-box">
-                                <img :src="item.author.avatar" class="avtar">
-                                <p class="nickname">{{ item.author.nickname }}</p>
-                            </div>
-                            <h3 class="item-title">{{ item.title }}</h3>
-                            <p class="item-des">{{ item.des }}</p>
+    <!-- 首页内容区域 -->
+    <div class="content-box">
+        <div v-for="(alist, index) in lists" :key="index">
+            <h2>{{ alist.title }}</h2>
+            <div class="list-box">
+                <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
+                    <div class="card-box" v-on:click="cardClicked(item)">
+                        <div v-if="item.author" class="user-info-box">
+                            <img :src="item.author.avatar" class="avtar">
+                            <p class="nickname">{{ item.author.nickname }}</p>
                         </div>
+                        <h3 class="item-title">{{ item.title }}</h3>
+                        <p class="item-des">{{ item.des }}</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
@@ -30,7 +28,7 @@
         },
         data() {
             return {
-                
+
             }
         },
         methods: {
@@ -48,7 +46,7 @@
     }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
     .content-box {
         display: flex;
         background-color: #fff;
@@ -127,5 +125,39 @@
         font-size: 14px;
         text-align: left;
         padding: 0px 12px;
+    }
+    @media screen and (max-width: 1200px) {
+        .item-box {
+            width: 25%;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .item-box {
+            width: 33.33%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .item-box {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .item-box {
+            width: 100%;
+            height: 160px;
+        }
+        .item-title {
+            margin-top: 18px;
+            text-align: right;
+        }
+        .item-des {
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+        }
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
     }
 </style>

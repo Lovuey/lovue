@@ -1,10 +1,10 @@
 <template>
     <div>
         <div id="app">
-            <h1>{{ msg }}</h1>
+            <p>{{ msg }}</p>
         </div>
         <div id="app-body">
-            <h4>{{ title }}</h4>
+            <p>{{ title }}</p>
         </div>
     </div>
 </template>
@@ -14,13 +14,13 @@
         name: 'example1',
         data: function () {
             return {
-                msg: '欢迎来到前端小课',
-                title: "Vue 实例讲解"
+                msg: '欢迎来到 Vue 虚拟实验室，我是第一个实例',
+                title: "我是第二个实例"
             }
         }
     }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 
 </style>

@@ -53,7 +53,7 @@ export default {
     },
     data() {
         return {
-            cssPrefix: "/themes/prism-",
+            cssPrefix: "./themes/prism-",
             defaultTheme: "tomorrow",
             theme: "",
             themeList: {
@@ -74,7 +74,7 @@ export default {
                 this.changeLocalCodeColor();
             }
             Prism.highlightAll();
-            console.log("highlight done.");
+            // console.log("highlight done.");
         },
         changeLocalCodeColor() {
             // 切换局部代码样式
@@ -101,7 +101,7 @@ export default {
                 return;
             }
             this.addCss(theme);
-            console.log("loadCss done.");
+            // console.log("loadCss done.");
         }
     },
     computed: {

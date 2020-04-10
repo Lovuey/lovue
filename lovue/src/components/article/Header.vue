@@ -2,25 +2,15 @@
     <div class="post-header">
         <p class="title">{{ article.title }}</p>
         <p class="des">{{ article.subTitle }}</p>
-        <p class="author">作者：<a
-                :href="article.author.link"
-                target="_blank"
-            >{{ article.author.name }}</a></p>
+        <p class="author">作者：<a :href="article.author.link" target="_blank">{{ article.author.name }}</a></p>
         <!-- 代码主题切换 -->
-        <label class="code-theme">代码主题
-            <select
-                class="form-control"
-                name="theme-choice"
-                v-model='theme'
-            >
-                <option
-                    v-for="(key,value,index) in themeList"
-                    :key="index"
-                    :value="value"
-                >{{key}}
+        <div class="code-theme">
+            <label for="theme-choice">代码主题 </label>
+            <select class="form-control" name="theme-choice" id="theme-choice" v-model='theme'>
+                <option v-for="(key,value,index) in themeList" :key="index" :value="value">{{key}}
                 </option>
             </select>
-        </label>
+        </div>
     </div>
 </template>
 
@@ -36,7 +26,7 @@ export default {
     },
     data() {
         return {
-            cssPrefix: "/themes/prism-",
+            cssPrefix: "./themes/prism-",
             defaultTheme,
             theme,
             themeList: {
@@ -69,7 +59,7 @@ export default {
                 return;
             }
             this.addCss(theme);
-            console.log("loadCss done.");
+            // console.log("loadCss done.");
         }
     },
     watch: {

@@ -2,8 +2,8 @@
 
 /* 文章头部样式 */
 .post-header {
-    border-left: 4px solid #d0021b;
-    border-right: 4px solid #d0021b;
+    border-left: 4px solid @h-color;
+    border-right: 4px solid @h-color;
     background-color: white;
     padding: 5px 20px;
     border-radius: 4px;
@@ -17,6 +17,8 @@
     .des {
         font-size: @text-font-size;
         color: @text-222-color;
+        letter-spacing: 1px;
+        line-height: 2;
         text-align: left;
     }
     .author {
@@ -29,6 +31,12 @@
         top: 35px;
         right: 20px;
     }
+    @media screen and(max-width: 480px) {
+        .code-theme label{
+            display: block;
+        }
+    }
+    
 }
 /* 文章内容样式 */
 .post-body {
@@ -38,17 +46,42 @@
     .code-exam-show {
         padding: 10px 10px;
         padding-bottom: 20px;
-        border: #E02020 1px;
-        border-style: dotted;
+        border: @theme-color 1px solid;
     }
     .code-show-title {
-        color: blue;
+        color: @theme-color;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .code-download {
+        display: inline-block;
+        margin: 20px 0;
+        background:  @theme-color;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: 700;
+        cursor: pointer;
     }
     .text {
         font-size: @text-font-size;
+        color: rgba(0,0,0,.85);
+        line-height: 2;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    .image-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image {
+            max-width: 80%;
+            margin: 0 auto;
+        }
     }
     h2 {
-        border-left: 4px solid #d0021b;
+        border-left: 4px solid @h-color;
         background-color: white;
         padding: 5px 20px;
     }

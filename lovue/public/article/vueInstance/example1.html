@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue实例</title>
+    <!-- // 加载 js 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="../../example.css">
+    <style>
+        #example-app-1 {
+            padding: 20px;
+        }
+        .text {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里写入各个例子的内容 -->
+    <!-- 模板 -->
+    <div class="example-app-1">
+        <div class="text">{{ msg }};</div>
+    </div>
+    <script>
+        // JS代码
+        let option = {
+            el: '.example-app-1',
+            // 数据，用来与模板进行绑定，返回值是一个函数。
+            data: function () {
+                return {
+                    lists: [
+                        '你好，我是素燕',
+                        '一名大前端工程师，主要方向前端和 iOS',
+                        '2019年8月30日我开始写《前端小课》',
+                        '一本帮助你入门前端的电子书',
+                        '最终目的帮助10万人入门并进阶前端',
+                        '2020年3月6日我创建『Vue虚拟实验室』',
+                        '与 40 位小伙伴共同学习 Vue',
+                        '2020年3月7日创建开了我们第一个项目 Lovue（Love vue）',
+                        '一个实例与知识讲解的项目',
+                        '从基础到核心原理',
+                        '一点一滴',
+                        '最终搞透 Vue',
+                        '大家加油！！！'
+                    ],
+                    curIndex: 0
+                };
+            },
+            // 生命周期函数
+            mounted() {
+                this.startRun();
+            },
+            // 计算属性
+            computed: {
+                msg: function () {
+                    return this.lists[this.curIndex];
+                }
+            },
+            // 方法定义
+            methods: {
+                startRun() {
+                    setInterval(() => {
+                        this.curIndex += 1;
+                        if (this.curIndex >= this.lists.length) {
+                            this.curIndex = 0;
+                        }
+                    }, 3000);
+                }
+            }
+        };
+        new Vue(option)
+    </script>
+</body>
+
+</html>

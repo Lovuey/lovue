@@ -1,9 +1,10 @@
 export default {
     lists: [{
             title: "基础",
-            datas: [{
+            datas: [
+                {
                     title: "Vue 实例",
-                    des: "通过用 Vue 函数创建一个新的 Vue 实例。",
+                    des: "Vue 实例作为 Vue 的入口，是入门 Vue 的第一步。",
                     route: "/vueinstance",
                     author: {
                         nickname: "素燕",
@@ -25,7 +26,7 @@ export default {
                     des: "关于computed, methods, watchers的深入理解",
                     author: {
                         nickname: "张家博",
-                        avatar: "http://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
+                        avatar: "https://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
                         link: "https://github.com/jarbozhang"
                     }
                 },
@@ -60,7 +61,7 @@ export default {
                     title: "事件处理",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "唐超",
+                        nickname: "未认领",
                         avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "../assets/logo.png"
                     }
@@ -70,7 +71,7 @@ export default {
                     des: "请负责人人添加描述，最多 30 个字",
                     author: {
                         nickname: "chuhuangvio",
-                        avatar: "https://img04.sogoucdn.com/app/a/100520146/7fb1e9baa386272c2a62daa26f8a8332",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "https://github.com/chuhuangvio"
                     }
                 }
@@ -78,22 +79,23 @@ export default {
         },
         {
             title: "组件",
-            datas: [{
+            datas: [
+                {
                     title: "组件基础",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "介绍组件的基本使用，组件是可复用的 Vue 实例",
                     author: {
-                        nickname: "素燕",
-                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
-                        link: "https://github.com/lefex"
+                        nickname: "jackey",
+                        avatar: "https://avatars0.githubusercontent.com/u/12994399?s=400&u=d0180d13647782a43cdae3734787fd643495fc88&v=4",
+                        link: "https://github.com/jackeyxiang"
                     }
                 },
                 {
                     title: "组件注册",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "素燕",
-                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
-                        link: "https://github.com/lefex"
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
@@ -107,11 +109,11 @@ export default {
                 },
                 {
                     title: "自定义事件",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "除了vue内置的一些基本事件，我们还可以进行 Vue自定义事件",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "effort",
+                        avatar: "https://ae01.alicdn.com/kf/H2b554319c3884167937d45b5be501aaf1.jpg",
+                        link: "https://effortcheep.github.io/"
                     }
                 },
                 {
@@ -127,18 +129,18 @@ export default {
                     title: "动态组件",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "素燕",
-                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
-                        link: "https://github.com/lefex"
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
                     title: "异步组件",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "素燕",
-                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
-                        link: "https://github.com/lefex"
+                        nickname: "未认领",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
+                        link: "../assets/logo.png"
                     }
                 },
                 {
@@ -214,11 +216,12 @@ export default {
                 },
                 {
                     title: "过滤器",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "把一个数据转换成另一种形式的数据",
+                    route: "/filter",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 }
             ]
