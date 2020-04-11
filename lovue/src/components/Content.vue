@@ -1,29 +1,25 @@
 <template>
-    <div>
-        <div class="content-box">
-            <div v-for="(alist, index) in lists" :key="index">
-                <h2>{{ alist.title }}</h2>
-                <div class="list-box">
-                    <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
-                        <div class="card-box">
-                            <div v-if="item.author" class="user-info-box">
-                                <img :src="item.author.avatar" class="avtar">
-                                <p class="nickname">{{ item.author.nickname }}</p>
-                            </div>
-                            <h3 class="item-title">{{ item.title }}</h3>
-                            <p class="item-des">{{ item.des }}</p>
+    <!-- 首页内容区域 -->
+    <div class="content-box">
+        <div v-for="(alist, index) in lists" :key="index">
+            <h2>{{ alist.title }}</h2>
+            <div class="list-box">
+                <div v-for="(item, index) in alist.datas" :key="index" class="item-box">
+                    <div class="card-box" v-on:click="cardClicked(item)">
+                        <div v-if="item.author" class="user-info-box">
+                            <img :src="item.author.avatar" class="avtar">
+                            <p class="nickname">{{ item.author.nickname }}</p>
                         </div>
+                        <h3 class="item-title">{{ item.title }}</h3>
+                        <p class="item-des">{{ item.des }}</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
 
 <script>
-    // eslint-disable-next-line no-unused-vars
-    import ClassWithStyle from './base/BindClassWithStyle'
     export default {
         name: 'Top',
         props: {
@@ -32,24 +28,30 @@
         },
         data() {
             return {
-                
+
             }
-        },components:{
-            // eslint-disable-next-line vue/no-unused-components
-            ClassWithStyle
+        },
+        methods: {
+            cardClicked(item) {
+                console.log('clicked', item);
+                if (!item || !item.route) {
+                    console.log('请在 const/content.js 中添加 route 参数');
+                    return;
+                }
+                this.$router.push({
+                    path: item.route
+                });
+            }
         }
     }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
     .content-box {
         display: flex;
-        box-sizing: border-box;
-        max-width: 1256px;
-        margin: 0 auto;
         background-color: #fff;
         flex-direction: column;
-        margin-bottom: 100px;
+        padding: 20px 15px;
     }
     .list-box {
         width: 100%;
@@ -110,7 +112,7 @@
         color: #314659;
         text-align: left;
         margin-left: 12px;
-        font-weight: lighter;
+        font-weight: bold;
     }
     .item-title {
         color: #0d1a26;
@@ -123,5 +125,39 @@
         font-size: 14px;
         text-align: left;
         padding: 0px 12px;
+    }
+    @media screen and (max-width: 1200px) {
+        .item-box {
+            width: 25%;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .item-box {
+            width: 33.33%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .item-box {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .item-box {
+            width: 100%;
+            height: 160px;
+        }
+        .item-title {
+            margin-top: 18px;
+            text-align: right;
+        }
+        .item-des {
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            overflow:hidden;
+        }
+        h2 {
+            margin: 0;
+            text-align: center;
+        }
     }
 </style>
