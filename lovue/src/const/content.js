@@ -68,7 +68,8 @@ export default {
                 },
                 {
                     title: "表单输入绑定",
-                    des: "请负责人人添加描述，最多 30 个字",
+                    des: "关于vue的表单是如何提交的",
+                    route: "/formSubmit",
                     author: {
                         nickname: "chuhuangvio",
                         avatar: "https://cn.vuejs.org/images/logo.png",
