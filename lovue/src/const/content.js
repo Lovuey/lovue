@@ -1,8 +1,7 @@
 export default {
     lists: [{
             title: "基础",
-            datas: [
-                {
+            datas: [{
                     title: "Vue 实例",
                     des: "Vue 实例作为 Vue 的入口，是入门 Vue 的第一步。",
                     route: "/vueinstance",
@@ -80,8 +79,7 @@ export default {
         },
         {
             title: "组件",
-            datas: [
-                {
+            datas: [{
                     title: "组件基础",
                     des: "介绍组件的基本使用，组件是可复用的 Vue 实例",
                     author: {
@@ -232,6 +230,7 @@ export default {
             datas: [{
                     title: "单文件组件",
                     des: "以代码高亮组件为例讲解Vue单文件组件的使用",
+                    route: "/vueComponent",
                     author: {
                         nickname: "Yuxiaoy1",
                         avatar: "https://avatars0.githubusercontent.com/u/24974936?s=60&v=4",

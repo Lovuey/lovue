@@ -6,12 +6,12 @@ import Computed from '@/views/computed/Computed.vue'
 import Filter from '@/views/filter/Filter.vue'
 // 以 @ 符号方式引入，会自动从 scr 目录开始查找
 import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
+import VueComponent from '@/views/vueComponent/VueComponent.vue'
 
 // 加载 VueRouter 中间件
 Vue.use(VueRouter);
 
-const routes = [
-    {
+const routes = [{
         path: '/',
         name: 'Home',
         component: Home
@@ -33,6 +33,12 @@ const routes = [
         path: '/componentBasics',
         name: 'ComponentBasics',
         component: ComponentBasics
+    },
+    // 单文件组件 demo
+    {
+        path: '/vueComponent',
+        name: 'VueComponent',
+        component: VueComponent
     },
     {
         path: '/computed',
