@@ -12,6 +12,9 @@ export default {
     }, {
         title: 'Prismjs官方文档',
         link: 'https://prismjs.com/'
+    }, {
+        title: 'Vue.js 官网API',
+        link: 'https://cn.vuejs.org/v2/api/#%E5%86%85%E7%BD%AE%E7%9A%84%E7%BB%84%E4%BB%B6'
     }],
     nodes: [{
         type: 'text',
