@@ -1,0 +1,103 @@
+@import "./base.less";
+
+/* 文章头部样式 */
+.post-header {
+    border-left: 4px solid @h-color;
+    border-right: 4px solid @h-color;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 4px;
+    position: relative;
+    .title {
+        font-weight: 700;
+        font-size: 30px;
+        color: #555;
+        text-align: left;
+    }
+    .des {
+        font-size: @text-font-size;
+        color: @text-222-color;
+        letter-spacing: 1px;
+        line-height: 2;
+        text-align: left;
+    }
+    .author {
+        font-size: @text-font-size;
+        color: @text-222-color;
+        text-align: left;
+    }
+    .code-theme{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+/* 文章内容样式 */
+.post-body {
+    padding: 20px;
+    border-top: 10px solid #f6f8f9;
+    min-height: 500px;
+    .code-exam-show {
+        padding: 10px 10px;
+        padding-bottom: 20px;
+        border: @theme-color 1px solid;
+    }
+    .code-show-title {
+        color: @theme-color;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .code-download {
+        display: inline-block;
+        margin: 20px 0;
+        background:  @theme-color;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .text {
+        font-size: @text-font-size;
+        color: rgba(0,0,0,.85);
+        line-height: 2;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    .quote{
+        font-size: @text-font-size;
+        color:@text-quote-color;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: .25rem 1rem;
+        border-left: 4px solid #ddd;
+        
+    }
+    .image-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+    h2 {
+        border-left: 4px solid @h-color;
+        background-color: white;
+        padding: 5px 20px;
+    }
+}
+/* 文章底部样式 */
+.post-footer {
+    border-top: 10px solid #f6f8f9;
+    border-left: 4px solid #eee;
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 4px;
+    min-height: 100px;
+    .link {
+        font-size: 20px;
+    }
+}

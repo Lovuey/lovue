@@ -1,11 +1,9 @@
 export default {
-    lists: [
-        {
+    lists: [{
             title: "基础",
-            datas: [
-                {
+            datas: [{
                     title: "Vue 实例",
-                    des: "通过用 Vue 函数创建一个新的 Vue 实例。",
+                    des: "Vue 实例作为 Vue 的入口，是入门 Vue 的第一步。",
                     route: "/vueinstance",
                     author: {
                         nickname: "素燕",
@@ -25,9 +23,10 @@ export default {
                 {
                     title: "计算属性和监听器",
                     des: "关于computed, methods, watchers的深入理解",
+                    route: "/computed",
                     author: {
                         nickname: "张家博",
-                        avatar: "http://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
+                        avatar: "https://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",
                         link: "https://github.com/jarbozhang"
                     }
                 },
@@ -62,7 +61,7 @@ export default {
                     title: "事件处理",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
-                        nickname: "唐超",
+                        nickname: "未认领",
                         avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "../assets/logo.png"
                     }
@@ -72,7 +71,7 @@ export default {
                     des: "请负责人人添加描述，最多 30 个字",
                     author: {
                         nickname: "chuhuangvio",
-                        avatar: "https://img04.sogoucdn.com/app/a/100520146/7fb1e9baa386272c2a62daa26f8a8332",
+                        avatar: "https://cn.vuejs.org/images/logo.png",
                         link: "https://github.com/chuhuangvio"
                     }
                 }
@@ -80,14 +79,13 @@ export default {
         },
         {
             title: "组件",
-            datas: [
-                {
+            datas: [{
                     title: "组件基础",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "介绍组件的基本使用，组件是可复用的 Vue 实例",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "jackey",
+                        avatar: "https://avatars0.githubusercontent.com/u/12994399?s=400&u=d0180d13647782a43cdae3734787fd643495fc88&v=4",
+                        link: "https://github.com/jackeyxiang"
                     }
                 },
                 {
@@ -101,20 +99,20 @@ export default {
                 },
                 {
                     title: "Prop",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "子组件接受父组件传递数据的一个自定义属性",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "张晓檬",
+                        avatar: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584014362336&di=0cfe72d3caadf019fd13c0a9b327e9d5&imgtype=0&src=http%3A%2F%2Fwww.deskcar.com%2Fdesktop%2Fcartoon%2Fjapan%2F2011417214141%2F22.jpg",
+                        link: "https://github.com/zhangxiaomeng1"
                     }
                 },
                 {
                     title: "自定义事件",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "除了vue内置的一些基本事件，我们还可以进行 Vue自定义事件",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "effort",
+                        avatar: "https://ae01.alicdn.com/kf/H2b554319c3884167937d45b5be501aaf1.jpg",
+                        link: "https://effortcheep.github.io/"
                     }
                 },
                 {
@@ -157,8 +155,7 @@ export default {
         },
         {
             title: "过渡 & 动画",
-            datas: [
-                {
+            datas: [{
                     title: "进入/离开 & 列表过渡",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -180,8 +177,7 @@ export default {
         },
         {
             title: "可复用性 & 组合",
-            datas: [
-                {
+            datas: [{
                     title: "混入",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -219,25 +215,26 @@ export default {
                 },
                 {
                     title: "过滤器",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "把一个数据转换成另一种形式的数据",
+                    route: "/filter",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "素燕",
+                        avatar: "https://tvax3.sinaimg.cn/crop.0.0.667.667.180/006uSOiEly8fxzfw4tub0j30ij0ijt92.jpg",
+                        link: "https://github.com/lefex"
                     }
                 }
             ]
         },
         {
             title: "工具",
-            datas: [
-                {
+            datas: [{
                     title: "单文件组件",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "以代码高亮组件为例讲解Vue单文件组件的使用",
+                    route: "/vueComponent",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "Yuxiaoy1",
+                        avatar: "https://avatars0.githubusercontent.com/u/24974936?s=60&v=4",
+                        link: "https://github.com/yuxiaoy1"
                     }
                 },
                 {
@@ -271,8 +268,7 @@ export default {
         },
         {
             title: "规模化",
-            datas: [
-                {
+            datas: [{
                     title: "路由",
                     des: "请负责人人添加描述，最多 30 个字。",
                     author: {
@@ -312,17 +308,15 @@ export default {
         },
         {
             title: "原理",
-            datas: [
-                {
-                    title: "深入响应原理",
-                    des: "请负责人人添加描述，最多 30 个字。",
-                    author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
-                    }
+            datas: [{
+                title: "深入响应原理",
+                des: "请负责人人添加描述，最多 30 个字。",
+                author: {
+                    nickname: "未认领",
+                    avatar: "https://cn.vuejs.org/images/logo.png",
+                    link: "../assets/logo.png"
                 }
-            ]
+            }]
         }
     ]
 };

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovue代码高亮组件</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-tomorrow.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/inline-color/prism-inline-color.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-highlight/prism-line-highlight.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/match-braces/prism-match-braces.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.css">
+    <!-- // 加载 js 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .example {
+            padding: 20px;
+        }
+        
+        pre {
+            border-radius: 0.5rem;
+            max-height: 25rem;
+            overflow: auto;
+        }
+        
+        .line-highlight {
+            background-color: rgba(0, 255, 255, 0.2);
+            margin-left: 3.5rem;
+        }
+        /* 美化代码块滚动条样式 */
+        
+         ::-webkit-scrollbar-track-piece {
+            background-color: #f8f8f8;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 0.75rem;
+            height: 0.75rem;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            border-radius: 0.375rem;
+            background-color: #dddddd;
+            background-clip: padding-box;
+            min-height: 2rem;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里写入各个例子的内容 -->
+    <!-- 模板 -->
+    <div class="example">
+        <div class="code-theme">
+            <label for="theme-choice">代码主题 </label>
+            <select class="form-control" name="theme-choice" id="theme-choice" v-model='theme'>
+                <option v-for="(key,value,index) in themeList" :key="index" :value="value">{{key}}
+                </option>
+            </select>
+        </div>
+        <pre v-if="code" :data-line='dataLine' :class="{'line-numbers':lineNumbers}">
+            <code :class="codeClass" class="match-braces" v-text="code"></code>
+        </pre>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/inline-color/prism-inline-color.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/match-braces/prism-match-braces.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/plugins/show-language/prism-show-language.min.js"></script>
+    <script>
+        // JS代码
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            // 移除多余空格
+            "remove-trailing": true,
+            // 移除代码块整体的不必要缩进
+            "remove-indent": true,
+            // 移除代码块头的空格
+            "left-trim": true,
+            // 移除代码块尾的空格
+            "right-trim": true,
+            // 超过80字符自动换行
+            "break-lines": 80
+        });
+        let defaultTheme = "tomorrow";
+
+        const vm = new Vue({
+            el: '.example',
+            // 数据，用来与模板进行绑定，返回值是一个函数。
+            data: {
+                dataLine: '1,4,7',
+                lineNumbers: true,
+                codeClass: 'language-javascript',
+                cssPrefix: "https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-",
+                theme: defaultTheme,
+                themeList: {
+                    // "coy",
+                    dark: "Dark",
+                    // "funky",
+                    okaidia: "Okadia",
+                    solarizedlight: "Solarized Light",
+                    tomorrow: "Tomorrow Night",
+                    twilight: "Twilight"
+                },
+                code: `import Lovue from '@/components/Lovue'
+
+// 1.全局注册
+Vue.components('lovue', Lovue)
+
+// 2.Vue实例内部局部注册
+const vm = new Vue({
+  el: '#app',
+  components: {
+    Lovue
+  }
+})`
+            },
+            methods: {
+                addCss(theme) {
+                    let link = document.createElement("link");
+                    let head = document.getElementsByTagName("head")[0];
+                    link.rel = "stylesheet";
+                    link.type = "text/css";
+                    link.href = this.cssPrefix + theme + ".css";
+                    head.appendChild(link);
+                },
+                loadCss(theme) {
+                    let cssLink = "link[href^='" + this.cssPrefix + "']";
+                    let link = document.head.querySelectorAll(cssLink);
+                    if (link.length) {
+                        // 判断主题css文件是否存在
+                        for (let i = 0; i < link.length; i++)
+                            link[i].href = this.cssPrefix + theme + ".min.css";
+                        return;
+                    }
+                    this.addCss(theme);
+                    // console.log("loadCss done.");
+                }
+            },
+            watch: {
+                theme: function(newVal) {
+                    this.loadCss(newVal);
+                    localStorage.setItem("codeTheme", newVal);
+                }
+            },
+            mounted() {
+                this.theme = localStorage.getItem("codeTheme") ?
+                    localStorage.getItem("codeTheme") :
+                    defaultTheme;
+                Prism.highlightAll();
+            },
+            updated() {
+                Prism.highlightAll()
+            },
+        })
+    </script>
+</body>
+
+</html>
