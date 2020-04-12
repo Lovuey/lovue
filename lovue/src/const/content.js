@@ -23,6 +23,7 @@ export default {
                 {
                     title: "计算属性和监听器",
                     des: "关于computed, methods, watchers的深入理解",
+                    route: "/computed",
                     author: {
                         nickname: "张家博",
                         avatar: "https://tvax4.sinaimg.cn/crop.0.0.567.567.180/006fwEW7ly8gcooyxvkb9j30fr0fs75i.jpg",

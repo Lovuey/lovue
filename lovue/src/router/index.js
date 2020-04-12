@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import VueInstance from '@/views/vueInstance/VueInstance.vue'
+import Computed from '@/views/computed/Computed.vue'
 import Filter from '@/views/filter/Filter.vue'
 // 以 @ 符号方式引入，会自动从 scr 目录开始查找
 import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
@@ -38,6 +39,11 @@ const routes = [{
         path: '/vueComponent',
         name: 'VueComponent',
         component: VueComponent
+    },
+    {
+        path: '/computed',
+        name: 'Computed',
+        component: Computed
     }
 ];
 
