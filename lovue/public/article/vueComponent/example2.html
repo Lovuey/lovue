@@ -90,6 +90,7 @@
             // 超过80字符自动换行
             "break-lines": 80
         });
+        let defaultTheme = "tomorrow";
 
         const vm = new Vue({
             el: '.example',
@@ -99,7 +100,7 @@
                 lineNumbers: true,
                 codeClass: 'language-javascript',
                 cssPrefix: "https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism-",
-                theme: "",
+                theme: defaultTheme,
                 themeList: {
                     // "coy",
                     dark: "Dark",
@@ -147,9 +148,13 @@ const vm = new Vue({
             watch: {
                 theme: function(newVal) {
                     this.loadCss(newVal);
+                    localStorage.setItem("codeTheme", newVal);
                 }
             },
             mounted() {
+                this.theme = localStorage.getItem("codeTheme") ?
+                    localStorage.getItem("codeTheme") :
+                    defaultTheme;
                 Prism.highlightAll();
             },
             updated() {
