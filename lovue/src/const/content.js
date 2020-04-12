@@ -100,6 +100,7 @@ export default {
                 {
                     title: "Prop",
                     des: "子组件接受父组件传递数据的一个自定义属性",
+                    route: "/prop",
                     author: {
                         nickname: "张晓檬",
                         avatar: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584014362336&di=0cfe72d3caadf019fd13c0a9b327e9d5&imgtype=0&src=http%3A%2F%2Fwww.deskcar.com%2Fdesktop%2Fcartoon%2Fjapan%2F2011417214141%2F22.jpg",
