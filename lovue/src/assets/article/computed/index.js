@@ -145,7 +145,7 @@ export default {
         {
             type: 'code',
             lang: 'js',
-            stressLine: '4,25,26,27,28,29,30,31,32,33,34,35,36,37',
+            stressLine: '4,25-37',
             con: `
             <template>
                 <div id="app">
