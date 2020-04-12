@@ -41,11 +41,12 @@ export default {
                 },
                 {
                     title: "if 条件渲染",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "介绍了v-if和v-show的使用以及它们各自的特点。",
+                    route: "/conditionalRendering",  
                     author: {
                         nickname: "ShannonMYang",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        avatar: "https://upload-images.jianshu.io/upload_images/356233-6a59c4712e21c9dc.jpg?imageMogr2/auto-orient/strip|imageView2/2/format/webp",
+                        link: "https://github.com/ShannonMYang"
                     }
                 },
                 {
