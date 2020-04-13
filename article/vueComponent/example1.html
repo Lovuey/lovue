@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue单文件组件</title>
+    <!-- // 加载 js 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .example {
+            padding: 20px;
+        }
+        
+        .text {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里写入各个例子的内容 -->
+    <!-- 模板 -->
+    <div class="example">
+        <div class="text">{{ msg }}</div>
+    </div>
+    <script>
+        // JS代码
+        const vm = new Vue({
+            el: '.example',
+            // 数据，用来与模板进行绑定，返回值是一个函数。
+            data: {
+                msg: '这是Lovue单文件组件'
+            }
+        })
+    </script>
+</body>
+
+</html>
