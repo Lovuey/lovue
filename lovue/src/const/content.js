@@ -13,10 +13,10 @@ export default {
                 },
                 {
                     title: "模板语法",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "模版语法这种方式很方便的，是Vude的常用写法。",
                     author: {
                         nickname: "ygben",
-                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
+                        avatar: "http://q7jdn4c0r.bkt.clouddn.com/person_logo.jpeg",
                         link: "../assets/logo.png"
                     }
                 },
@@ -118,10 +118,10 @@ export default {
                 },
                 {
                     title: "插槽",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "通过插槽，可以方便地向组件内部传递自定义的内容。",
                     author: {
                         nickname: "ygben",
-                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
+                        avatar: "http://q7jdn4c0r.bkt.clouddn.com/person_logo.jpeg",
                         link: "../assets/logo.png"
                     }
                 },
