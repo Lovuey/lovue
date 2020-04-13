@@ -109,6 +109,7 @@ export default {
                 {
                     title: "自定义事件",
                     des: "除了vue内置的一些基本事件，我们还可以进行 Vue自定义事件",
+                    route: "/customerAction",
                     author: {
                         nickname: "effort",
                         avatar: "https://ae01.alicdn.com/kf/H2b554319c3884167937d45b5be501aaf1.jpg",

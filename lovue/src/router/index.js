@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue'
 import VueInstance from '@/views/vueInstance/VueInstance.vue'
 import Computed from '@/views/computed/Computed.vue'
 import Filter from '@/views/filter/Filter.vue'
+import CustomerAction from '@/views/customerAction/customerAction.vue'
 // 以 @ 符号方式引入，会自动从 scr 目录开始查找
 import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
 import VueComponent from '@/views/vueComponent/VueComponent.vue'
@@ -44,6 +45,11 @@ const routes = [{
         path: '/computed',
         name: 'Computed',
         component: Computed
+    },
+    {
+        path: '/customerAction',
+        name: 'CustomerAction',
+        component: CustomerAction
     }
 ];
 
