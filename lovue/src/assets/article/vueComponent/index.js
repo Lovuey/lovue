@@ -106,7 +106,7 @@ const vm = new Vue({
     }, {
         type: 'example',
         con: 'example1',
-        source: '/article/vueComponent/example1.html'
+        source: '/lovue/article/vueComponent/example1.html'
     }, {
         type: 'h1',
         con: '代码高亮组件实现（基于 Prismjs）'
@@ -338,6 +338,6 @@ const vm = new Vue({
             Lovue
           }
         })`,
-        source: '/article/vueComponent/example2.html'
+        source: '/lovue/article/vueComponent/example2.html'
     }]
 }

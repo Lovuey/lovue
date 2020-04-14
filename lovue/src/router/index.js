@@ -5,6 +5,7 @@ import VueInstance from '@/views/vueInstance/VueInstance.vue'
 import Computed from '@/views/computed/Computed.vue'
 import Filter from '@/views/filter/Filter.vue'
 import FormSubmit from '@/views/formSubmit/FormSubmit.vue'
+import CustomerAction from '@/views/customerAction/customerAction.vue'
 // 以 @ 符号方式引入，会自动从 scr 目录开始查找
 import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
 import VueComponent from '@/views/vueComponent/VueComponent.vue'
@@ -52,6 +53,11 @@ const routes = [{
         name: 'FormSubmit',
         component: FormSubmit
     },
+    {
+        path: '/customerAction',
+        name: 'CustomerAction',
+        component: CustomerAction
+    }
 ];
 
 // 创建 VueRouter 实例
