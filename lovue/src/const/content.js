@@ -69,7 +69,8 @@ export default {
                 },
                 {
                     title: "表单输入绑定",
-                    des: "请负责人人添加描述，最多 30 个字",
+                    des: "关于vue的表单是如何提交的",
+                    route: "/formSubmit",
                     author: {
                         nickname: "chuhuangvio",
                         avatar: "https://cn.vuejs.org/images/logo.png",
@@ -110,6 +111,7 @@ export default {
                 {
                     title: "自定义事件",
                     des: "除了vue内置的一些基本事件，我们还可以进行 Vue自定义事件",
+                    route: "/customerAction",
                     author: {
                         nickname: "effort",
                         avatar: "https://ae01.alicdn.com/kf/H2b554319c3884167937d45b5be501aaf1.jpg",
