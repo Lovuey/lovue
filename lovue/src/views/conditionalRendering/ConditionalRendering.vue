@@ -65,20 +65,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+@import "../../styles/article.less";
+
 .ConditionalRendering {
     background-color: #fff;
 }
-
-h2 {
-    text-align: left;
-}
-
 h4 {
-    text-align: left;
-}
-
-p {
     text-align: left;
 }
 </style>
