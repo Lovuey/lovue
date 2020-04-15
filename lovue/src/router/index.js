@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import VueInstance from '@/views/vueInstance/VueInstance.vue'
 import Computed from '@/views/computed/Computed.vue'
+import VueProp from '@/views/vueProp/VueProp.vue'
 import Filter from '@/views/filter/Filter.vue'
 import FormSubmit from '@/views/formSubmit/FormSubmit.vue'
 import CustomerAction from '@/views/customerAction/customerAction.vue'
@@ -47,6 +48,12 @@ const routes = [{
         path: '/computed',
         name: 'Computed',
         component: Computed
+    },
+    // Vue Prop demo
+    {
+        path: '/prop',
+        name: 'VueProp',
+        component: VueProp
     },
     // 表单输入与绑定 demo
     {
