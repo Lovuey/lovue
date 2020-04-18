@@ -251,17 +251,17 @@ const routes = [
 
 ## 贡献者
 
+```
 @素燕：Vue实例 ，4月 7 号完成；
 @ygben 模板语法、插槽，4月 12 号完成；
 @张家博 计算属性和监听器 4月11日完成
-@Wynne Class 与 Style 绑定 4月11号完成
 @ShannonMYange if 条件渲染 4月12日完成
 @沈鑫 for列表渲染 4月12日完成
 @chuhuangvio 表达输入绑定, 4月12日完成
 @张晓檬 Prop，4月12号完成
 @Yuxiaoy1 单文件组件，4月12号完成
 @effort 自定义事件  4月12号完成
-
+```
 
 
 ## 上线
