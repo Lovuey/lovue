@@ -13,10 +13,10 @@ export default {
                 },
                 {
                     title: "模板语法",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "模版语法这种方式很方便的，是Vude的常用写法。",
                     author: {
                         nickname: "ygben",
-                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
+                        avatar: "http://q7jdn4c0r.bkt.clouddn.com/person_logo.jpeg",
                         link: "../assets/logo.png"
                     }
                 },
@@ -41,11 +41,12 @@ export default {
                 },
                 {
                     title: "if 条件渲染",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "介绍了v-if和v-show的使用以及它们各自的特点。",
+                    route: "/conditionalRendering",  
                     author: {
                         nickname: "ShannonMYang",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        avatar: "https://upload-images.jianshu.io/upload_images/356233-6a59c4712e21c9dc.jpg?imageMogr2/auto-orient/strip|imageView2/2/format/webp",
+                        link: "https://github.com/ShannonMYang"
                     }
                 },
                 {
@@ -68,7 +69,8 @@ export default {
                 },
                 {
                     title: "表单输入绑定",
-                    des: "请负责人人添加描述，最多 30 个字",
+                    des: "关于vue的表单是如何提交的",
+                    route: "/formSubmit",
                     author: {
                         nickname: "chuhuangvio",
                         avatar: "https://cn.vuejs.org/images/logo.png",
@@ -100,6 +102,7 @@ export default {
                 {
                     title: "Prop",
                     des: "子组件接受父组件传递数据的一个自定义属性",
+                    route: "/prop",
                     author: {
                         nickname: "张晓檬",
                         avatar: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584014362336&di=0cfe72d3caadf019fd13c0a9b327e9d5&imgtype=0&src=http%3A%2F%2Fwww.deskcar.com%2Fdesktop%2Fcartoon%2Fjapan%2F2011417214141%2F22.jpg",
@@ -118,10 +121,10 @@ export default {
                 },
                 {
                     title: "插槽",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "通过插槽，可以方便地向组件内部传递自定义的内容。",
                     author: {
                         nickname: "ygben",
-                        avatar: "https://avatars1.githubusercontent.com/u/15976837?s=460&v=4",
+                        avatar: "http://q7jdn4c0r.bkt.clouddn.com/person_logo.jpeg",
                         link: "../assets/logo.png"
                     }
                 },
