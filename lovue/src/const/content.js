@@ -92,11 +92,12 @@ export default {
                 },
                 {
                     title: "组件注册",
-                    des: "请负责人人添加描述，最多 30 个字。",
+                    des: "暂时还不了解，后续补上。",
+                    route: "/componentRegistration",
                     author: {
-                        nickname: "未认领",
-                        avatar: "https://cn.vuejs.org/images/logo.png",
-                        link: "../assets/logo.png"
+                        nickname: "俊杰",
+                        avatar: "http://mweb.junjieyulu.top/header.jpeg",
+                        link: "https://github.com/junjieyulu"
                     }
                 },
                 {
