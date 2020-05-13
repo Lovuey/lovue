@@ -11,6 +11,7 @@ import ConditionalRendering from '@/views/conditionalRendering/ConditionalRender
 // 以 @ 符号方式引入，会自动从 scr 目录开始查找
 import ComponentBasics from '@/views/componentBasics/ComponentBasics.vue'
 import VueComponent from '@/views/vueComponent/VueComponent.vue'
+import ComponentRegistration from '@/views/componentRegistration/componentRegistration.vue'
 
 // 加载 VueRouter 中间件
 Vue.use(VueRouter);
@@ -37,6 +38,12 @@ const routes = [{
         path: '/componentBasics',
         name: 'ComponentBasics',
         component: ComponentBasics
+    },
+    // 组件注册 demo
+    {
+        path: '/componentRegistration',
+        name: 'ComponentRegistration',
+        component: ComponentRegistration
     },
     // 单文件组件 demo
     {
